@@ -1,0 +1,39 @@
+             .time{
+            color:white;
+            position: absolute;
+            top: 20px;
+            right:20px;
+            }
+                    .web-background{
+            background-image: url('web-background1.png'); 
+            background-size:cover;            
+        }
+        input:placeholder {color: LightGray;}
+	
+	input.warning{
+	    border-color: red;
+	    }
+
+        /* 盒子样式 */
+        .container {
+            width: 500px; 
+            margin: 0 auto; 
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+	/* 搞笑背景*/
+        .Pandora {
+            width: 500px; 
+            margin: 0 auto; 
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-image: url('fun-background.png'); 
+            background-size: cover;          
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .ending{
+            text-align:center;
+            margin-top:50px;}
+    
