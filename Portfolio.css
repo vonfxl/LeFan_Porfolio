@@ -47,7 +47,7 @@ main {
   margin-top: 0;
 }
 
-.about-me {
+.content-section {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
@@ -81,17 +81,6 @@ footer {
 }
 
         /* Tableau */
-.dashboard-gallery {
-  width: 90%;
-  margin: auto;
-  margin-top: 2rem;
-    }
-
-.dashboard-gallery h2 {
-  text-align: left;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
 
 .img-row {
   display: flex;
@@ -102,7 +91,7 @@ footer {
 }
 
 .img-row img {
-  width: 35%;              
+  width: 50%;              
   max-width: 1000px;          
   border-radius: 8px;
   object-fit: cover;
