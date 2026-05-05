@@ -7,40 +7,51 @@
   <link rel="stylesheet" href="Portfolio.css" />
 </head>
 <body>
+  <nav class="top-nav">
+    <div class="brand"><a href="index.html" data-i18n="brand">Le Fan Portfolio</a></div>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="home">Home</a></li>
+      <li><a href="index.html#about" data-i18n="about">About</a></li>
+      <li class="dropdown">
+        <a href="#" data-i18n="projects">Projects ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="Homework_3.html" data-i18n="projHomework">Homework Project</a></li>
+          <li><a href="Tableau.html" data-i18n="projTableau">Tableau Dashboard</a></li>
+          <li><a href="PPT.html" data-i18n="projPpt">PowerPoint Gallery</a></li>
+        </ul>
+      </li>
+      <li><a href="https://www.linkedin.com/in/le-fan/" data-i18n="contact">Contact</a></li>
+    </ul>
+    <button id="lang-toggle" class="lang-toggle">中文</button>
+  </nav>
+
   <header>
-    <h1>My Tableau Dashboards</h1>
-    <p>These are examples of my data visualization work using Tableau.</p>
+    <h1 data-i18n="title">My Tableau Dashboards</h1>
+    <p data-i18n="subtitle">These are examples of my data visualization work using Tableau.</p>
   </header>
 
   <section class="content-section">
-<!-- Early Semester -->
-  <h2>📊 Below is from early of the semester</h2>
-  
+  <h2 data-i18n="early">📊 Below is from early of the semester</h2>
   <div class="img-row">
     <img src="Tableau_sheet1.png" alt="EarlyWork1">
     <img src="Tableau_sheet2.png" alt="EarlyWork2">
   </div>
-
   <ul class="desc">
-    <li>
-    <strong>Early-Semester Work – Foundational Tableau Skills</strong><br>
-    This early project focused on learning core Tableau techniques such as scatterplots, mapping, filters, and trendline analysis. I explored how different factors relate to property values and experimented with geographic visualizations using precinct-level crime data. At this stage, my work emphasized building confidence with data cleaning, joining datasets, applying basic calculations, and creating clear, functional visual dashboards.
+    <li><strong data-i18n="earlyHead">Early-Semester Work – Foundational Tableau Skills</strong><br>
+      This early project focused on learning core Tableau techniques such as scatterplots, mapping, filters, and trendline analysis. I explored how different factors relate to property values and experimented with geographic visualizations using precinct-level crime data. At this stage, my work emphasized building confidence with data cleaning, joining datasets, applying basic calculations, and creating clear, functional visual dashboards.
     </li>
   </ul>
-
-  <!-- End of Semester -->
-  <h2>📈 Below is from end of the semester</h2>
-
+  
+  <h2 data-i18n="late">📈 Below is from end of the semester</h2>
   <div class="img-row">
     <img src="Tableau_Dashboard1.png" alt="EndWork1">
     <img src="Tableau_Dashboard2.png" alt="EndWork2">
   </div>
-
   <div class="img-row">
     <img src="Tableau_Dashboard3.png" alt="EndWork3">
     <img src="Tableau_Dashboard4.png" alt="EndWork4">
   </div>
-<ul class="desc">
+  <ul class="desc">
   <li>
     <strong>Project Overview</strong><br>
     This project analyzes large-scale anime data from MyAnimeList to understand what drives popularity, ratings, studio performance, and staff impact in the U.S. anime market. The final output is an interactive Tableau dashboard that helps users explore trends across anime titles, genres, studios, and creative contributors over time.
@@ -76,15 +87,18 @@
 </ul>
   </section>
 
-<a class="download-btn" href="https://drive.google.com/drive/folders/16EhYNIQGYELivsDqqXN3zVbMacfX39KG?usp=sharing" target="_blank">
-    📥 View / Download on Google Drive
-  </a>
-<a href="index.html" class="download-btn" style="margin-top: 0;">
-  🔙 Back to Home
-</a>
+<a class="download-btn" href="https://drive.google.com/drive/folders/16EhYNIQGYELivsDqqXN3zVbMacfX39KG?usp=sharing" target="_blank" data-i18n="download">📥 View / Download on Google Drive</a>
   <footer>
-    <p>@ Le Fan | Tableau Projects</p>
-    <a style="color:black;" href="https://www.linkedin.com/in/le-fan/"> Contact Us</a>
+    <p data-i18n="footer">@ Le Fan | Tableau Projects</p>
+    <a style="color:black;" href="https://www.linkedin.com/in/le-fan/" data-i18n="contactUs">Contact Us</a>
   </footer>
+
+<script>
+const translations={en:{brand:'Le Fan Portfolio',home:'Home',about:'About',projects:'Projects ▾',projHomework:'Homework Project',projTableau:'Tableau Dashboard',projPpt:'PowerPoint Gallery',contact:'Contact',title:'My Tableau Dashboards',subtitle:'These are examples of my data visualization work using Tableau.',early:'📊 Below is from early of the semester',earlyHead:'Early-Semester Work – Foundational Tableau Skills',late:'📈 Below is from end of the semester',download:'📥 View / Download on Google Drive',back:'🔙 Back to Home',footer:'@ Le Fan | Tableau Projects',contactUs:'Contact Us'},zh:{brand:'范乐作品集',home:'首页',about:'关于我',projects:'项目 ▾',projHomework:'作业项目',projTableau:'Tableau 看板',projPpt:'PPT 展示',contact:'联系',title:'我的 Tableau 数据看板',subtitle:'以下是我使用 Tableau 完成的数据可视化作品。',early:'📊 以下是学期初的作品',earlyHead:'学期初作品 — Tableau 基础技能',late:'📈 以下是学期末的作品',download:'📥 在 Google Drive 查看 / 下载',back:'🔙 返回首页',footer:'@ 范乐 | Tableau 项目',contactUs:'联系我'}};
+const btn=document.getElementById('lang-toggle');
+function setLanguage(lang){document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(translations[lang][k])el.textContent=translations[lang][k];});btn.textContent=lang==='en'?'中文':'EN';localStorage.setItem('portfolio-lang',lang);} 
+setLanguage(localStorage.getItem('portfolio-lang')||'en');
+btn.addEventListener('click',()=>setLanguage(document.documentElement.lang==='en'?'zh':'en'));
+</script>
 </body>
 </html>

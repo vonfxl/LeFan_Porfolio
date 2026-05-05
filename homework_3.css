@@ -1,3 +1,20 @@
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1.2rem;
+  background: rgba(17, 24, 39, 0.95);
+}
+.brand a, .nav-links a { color: #fff; text-decoration: none; }
+.nav-links { list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0; }
+.dropdown { position: relative; }
+.dropdown-menu { display:none; position:absolute; top:100%; left:0; background:#111827; list-style:none; padding:0.35rem 0; border-radius:6px; min-width:200px; }
+.dropdown-menu li a { display:block; padding:0.45rem 0.8rem; }
+.dropdown:hover .dropdown-menu { display:block; }
+
              .time{
             color:white;
             position: absolute;
@@ -36,4 +53,3 @@
         .ending{
             text-align:center;
             margin-top:50px;}
-    
