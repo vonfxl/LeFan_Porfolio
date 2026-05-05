@@ -8,10 +8,14 @@
 </head>
 <body>
   <nav class="top-nav">
-    <div class="brand"><a href="index.html" data-i18n="brand">Le Fan Portfolio</a></div>
+    <div class="brand">
+      <a href="#home" aria-label="Le Fan Portfolio home">
+        <img src="Mlogo.png" alt="Le Fan Portfolio logo" class="brand-logo">
+      </a>
+    </div>
     <ul class="nav-links">
       <li><a href="index.html" data-i18n="home">Home</a></li>
-      <li><a href="index.html#about" data-i18n="about">About</a></li>
+      <li><a href="about me.html" data-i18n="about">About</a></li>
       <li class="dropdown">
         <a href="#" data-i18n="projects">Projects ▾</a>
         <ul class="dropdown-menu">
@@ -50,7 +54,49 @@
     <a style="color:black;" href="https://www.linkedin.com/in/le-fan/" data-i18n="contactUs">Contact Us</a>
   </footer>
 <script>
-const translations={en:{brand:'Le Fan Portfolio',home:'Home',about:'About',projects:'Projects ▾',projHomework:'Homework Project',projTableau:'Tableau Dashboard',projPpt:'PowerPoint Gallery',contact:'Contact',title:'My PowerPoint gallery',subtitle:'Explore my projects from school below 👇',projectTitle:'Digital Transformation',projectSub:'University of Houston Digital Transformation: Implementation and selection of Canvas',aboutProject:'About Project',p1:'This project focuses on analyzing a real digital transformation initiative: the University of Houston’s transition from an older learning management system to Canvas, a modern, cloud-based platform used across higher education.',p2:'The goal of the project was to examine how UH planned, executed, and managed this transformation—covering technology adoption, change management, stakeholder engagement, vendor coordination, and long-term organizational impact.',gallery:'PPT gallery',download:'📥 View / Download on Google Drive',back:'🔙 Back to Home',footer:'@ Le Fan | Portfolio',contactUs:'Contact Us'},zh:{brand:'范乐作品集',home:'首页',about:'关于我',projects:'项目 ▾',projHomework:'作业项目',projTableau:'Tableau 看板',projPpt:'PPT 展示',contact:'联系',title:'我的 PowerPoint 展示',subtitle:'在下方查看我的课程项目 👇',projectTitle:'数字化转型',projectSub:'休斯顿大学数字化转型：Canvas 的选型与实施',aboutProject:'项目介绍',p1:'本项目分析了一个真实的数字化转型案例：休斯顿大学从旧学习管理系统迁移到现代云平台 Canvas。',p2:'项目目标是研究 UH 如何规划、执行并管理该转型，包括技术采用、变更管理、利益相关者沟通、供应商协作和长期组织影响。',gallery:'PPT 画廊',download:'📥 在 Google Drive 查看 / 下载',back:'🔙 返回首页',footer:'@ 范乐 | 作品集',contactUs:'联系我'}};
+const translations={
+  en:{
+    brand:'Le Fan Portfolio',
+    home:'Home',
+    about:'About',
+    projects:'Projects ▾',
+    projHomework:'Homework Project',
+    projTableau:'Tableau Dashboard',
+    projPpt:'PowerPoint Gallery',
+    contact:'Contact',
+    title:'My PowerPoint gallery',
+    subtitle:'Explore my projects from school below 👇',
+    projectTitle:'Digital Transformation',
+    projectSub:'University of Houston Digital Transformation: Implementation and selection of Canvas',
+    aboutProject:'About Project',
+    p1:'This project focuses on analyzing a real digital transformation initiative: the University of Houston’s transition from an older learning management system to Canvas, a modern, cloud-based platform used across higher education.',
+    p2:'The goal of the project was to examine how UH planned, executed, and managed this transformation—covering technology adoption, change management, stakeholder engagement, vendor coordination, and long-term organizational impact.',
+    gallery:'PPT gallery',
+    download:'📥 View / Download on Google Drive',
+    back:'🔙 Back to Home',
+    footer:'@ Le Fan | Portfolio',
+    contactUs:'Contact Us'},
+    zh:{
+      brand:'范乐作品集',
+      home:'首页',
+      about:'关于我',
+      projects:'项目 ▾',
+      projHomework:'作业项目',
+      projTableau:'Tableau 看板',
+      projPpt:'PPT 展示',
+      contact:'联系',
+      title:'我的 PowerPoint 展示',
+      subtitle:'在下方查看我的课程项目 👇',
+      projectTitle:'数字化转型',
+      projectSub:'休斯顿大学数字化转型：Canvas 的选型与实施',
+      aboutProject:'项目介绍',
+      p1:'本项目分析了一个真实的数字化转型案例：休斯顿大学从旧学习管理系统迁移到现代云平台 Canvas。',
+      p2:'项目目标是研究 UH 如何规划、执行并管理该转型，包括技术采用、变更管理、利益相关者沟通、供应商协作和长期组织影响。',
+      gallery:'PPT 画廊',
+      download:'📥 在 Google Drive 查看 / 下载',
+      back:'🔙 返回首页',
+      footer:'@ 范乐 | 作品集',
+      contactUs:'联系我'}};
 const btn=document.getElementById('lang-toggle');
 function setLanguage(lang){document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(translations[lang][k])el.textContent=translations[lang][k];});btn.textContent=lang==='en'?'中文':'EN';localStorage.setItem('portfolio-lang',lang);} 
 setLanguage(localStorage.getItem('portfolio-lang')||'en');

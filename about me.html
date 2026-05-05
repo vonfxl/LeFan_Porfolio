@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="brand">
+      <a href="#home" aria-label="Le Fan Portfolio home">
+        <img src="Mlogo.png" alt="Le Fan Portfolio logo" class="brand-logo">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="navHome">Home</a></li>
+      <li><a href="about me.html" data-i18n="navAbout">About</a></li>
+      <li class="dropdown">
+        <a href="#projects" data-i18n="navProjects">Projects ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="Homework_3.html" data-i18n="projHomework">Homework Project</a></li>
+          <li><a href="Tableau.html" data-i18n="projTableau">Tableau Dashboard</a></li>
+          <li><a href="PPT.html" data-i18n="projPpt">PowerPoint Gallery</a></li>
+        </ul>
+      </li>
+      <li><a href="https://www.linkedin.com/in/le-fan/" data-i18n="navContact">Contact</a></li>
+    </ul>
+    <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">中文</button>
+  </nav>
+
+  <header id="home">
+    <h1 data-i18n="welcome">More About Me</h1>
+    <p data-i18n="subtitle">Details about me collage life</p>
+  </header>
+
+  <section id="about" class="content-section">
+    <div class="about-text story-layout">
+      <h1>Le Fan</h1>
+      <h2 data-i18n="degree">Master of Business Administration In MIS</h2>
+      <h3 class="about-heading" data-i18n="aboutTitle">About Me</h3>
+          <img src="ME.jpg" alt="My headshot" class="float-img left profile-img" />
+      <p data-i18n="aboutP1">Hi, I’m Le Fan, a graduate of the C. T. Bauer College of Business at the University of Houston, where I earned my Bachelor of Business Administration in Marketing and Management Information Systems and my Master of Science in Management Information Systems.</p>
+      <p data-i18n="aboutP2">My background combines business, technology, data analytics, and communication. I am interested in using technology to solve business problems, improve decision-making, and turn complex information into clear, useful insights. Through my academic work and project experience, I have developed skills in data analysis, visualization, research, and technical problem-solving using tools such as Python, Java, JavaScript, R, SAS, ArcGIS Pro, Tableau, and Microsoft Excel.</p>
+
+      <img src="Insperity.jpg" alt="University of Houston building" class="float-img right" />
+      <p data-i18n="aboutP3">During my undergraduate studies, I worked as the Research Lead for an Insperity corporate project through BUSI 3302: Connecting Bauer to Business. In this role, I helped conduct data-driven research on more than 150 students to better understand student motivations and recruitment preferences. I collaborated with a team of eight, analyzed survey responses, and helped translate the findings into useful insights for the project. This experience strengthened my ability to work with data, communicate findings, and approach business challenges from both an analytical and human-centered perspective.</p>
+
+      <p data-i18n="aboutP4">I have also served as a Teaching Assistant for MIS and Business Analytics courses at the University of Houston. In these roles, I supported both face-to-face and online classes by grading assignments, exams, dashboards, analytics projects, and presentations. I also assisted students through office hours, discussion boards, and one-on-one support, especially with Tableau dashboards, data visualization, analytics concepts, and project troubleshooting. These experiences helped me become better at explaining technical topics clearly, giving constructive feedback, and helping others build confidence with data and technology.</p>
+
+      <img src="ABSA.jpg" alt="ABSA organization logo" class="logo-img" />
+      <img src="MISSO.jpg" alt="MIS student organization banner" class="logo-img" />
+      <p data-i18n="aboutP5">Outside of the classroom, I developed leadership, mentoring, and professional engagement experience through the Asian Business Student Association, the Management Information Systems Student Organization, and the Bauer Undergraduate Center. As an active member of ABSA, I attended professional events, workshops, and networking opportunities that helped me grow my industry knowledge and career readiness. I was also recognized with the Most Active Member Scholarship and Community Service Scholarship. Through MISSO, I further expanded my interest in technology, business systems, analytics, and MIS-related career paths while connecting with peers and professionals in the field. As a Bauer Undergraduate Center mentor, I guided mentees with career advice, personal development, and campus involvement while helping create a supportive environment for students.</p>
+
+      <p data-i18n="aboutP6">I am fluent in English and Mandarin Chinese, which has helped me connect with people from different backgrounds and communicate across cultures. Whether I am analyzing data, building dashboards, supporting students, or collaborating on projects, I enjoy finding ways to make information easier to understand and more useful for decision-making.</p>
+      <p data-i18n="aboutP7">My goal is to continue growing at the intersection of business and technology, especially in roles that allow me to apply MIS, analytics, and problem-solving skills to create practical impact.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p data-i18n="footerText">@ Le Fan | Portfolio</p>
+    <a href="https://www.linkedin.com/in/le-fan/" data-i18n="contactLink">Contact Us</a>
+  </footer>
+
+  <script>
+    const translations = {
+      en: {
+        navHome: 'Home',
+        navAbout: 'About',
+        navProjects: 'Projects',
+        projHomework: 'Homework Project',
+        projTableau: 'Tableau Dashboard',
+        projPpt: 'PowerPoint Gallery',
+        navContact: 'Contact',
+        welcome: 'More About Me',
+        subtitle: 'Details about my collage life 👇',
+        degree: 'Master of Business Administration In MIS',
+        aboutTitle: 'About Me',
+        aboutP1: 'Hi, I’m Le Fan, a graduate of the C. T. Bauer College of Business at the University of Houston, where I earned my Bachelor of Business Administration in Marketing and Management Information Systems and my Master of Science in Management Information Systems.',
+        aboutP2: 'My background combines business, technology, data analytics, and My background combines business, technology, data analytics, and communication. I am interested in using technology to solve business problems, improve decision-making, and turn complex information into clear, useful insights. Through my academic work and project experience, I have developed skills in data analysis, visualization, research, and technical problem-solving using tools such as Python, Java, JavaScript, R, SAS, ArcGIS Pro, Tableau, and Microsoft Excel.. I am interested in using technology to solve business problems, improve decision-making, and turn complex information into clear, useful insights. Through my academic work and project experience, I have developed skills in data analysis, visualization, research, and technical problem-solving using tools such as Python, Java, JavaScript, R, SAS, ArcGIS Pro, Tableau, and Microsoft Excel.',
+        aboutP3:'During my undergraduate studies, I worked as the Research Lead for an Insperity corporate project through BUSI 3302: Connecting Bauer to Business. In this role, I helped conduct data-driven research on more than 150 students to better understand student motivations and recruitment preferences. I collaborated with a team of eight, analyzed survey responses, and helped translate the findings into useful insights for the project. This experience strengthened my ability to work with data, communicate findings, and approach business challenges from both an analytical and human-centered perspective.',
+        aboutP4:'I have also served as a Teaching Assistant for MIS and Business Analytics courses at the University of Houston. In these roles, I supported both face-to-face and online classes by grading assignments, exams, dashboards, analytics projects, and presentations. I also assisted students through office hours, discussion boards, and one-on-one support, especially with Tableau dashboards, data visualization, analytics concepts, and project troubleshooting. These experiences helped me become better at explaining technical topics clearly, giving constructive feedback, and helping others build confidence with data and technology.',
+        aboutP5:'Outside of the classroom, I developed leadership, mentoring, and professional engagement experience through the Asian Business Student Association, the Management Information Systems Student Organization, and the Bauer Undergraduate Center. As an active member of ABSA, I attended professional events, workshops, and networking opportunities that helped me grow my industry knowledge and career readiness. I was also recognized with the Most Active Member Scholarship and Community Service Scholarship. Through MISSO, I further expanded my interest in technology, business systems, analytics, and MIS-related career paths while connecting with peers and professionals in the field. As a Bauer Undergraduate Center mentor, I guided mentees with career advice, personal development, and campus involvement while helping create a supportive environment for students.',
+        aboutP6:'I am fluent in English and Mandarin Chinese, which has helped me connect with people from different backgrounds and communicate across cultures. Whether I am analyzing data, building dashboards, supporting students, or collaborating on projects, I enjoy finding ways to make information easier to understand and more useful for decision-making.',
+        aboutP7:'My goal is to continue growing at the intersection of business and technology, especially in roles that allow me to apply MIS, analytics, and problem-solving skills to create practical impact.',
+        footerText: '@ Le Fan | Portfolio',
+        contactLink: 'Contact Us'
+      },
+      zh: {
+        navHome: '首页',
+        navAbout: '关于我',
+        navProjects: '项目',
+        projHomework: '作业项目',
+        projTableau: 'Tableau 看板',
+        projPpt: 'PPT 展示',
+        navContact: '联系',
+        welcome: '欢迎来到我的作品集',
+        subtitle: '在下方查看我的课程项目 👇',
+        degree: '工商管理硕士（信息系统管理方向）',
+        aboutTitle: '关于我',
+        aboutP1:'大家好，我是范乐，毕业于休斯顿大学C. T. 鲍尔商学院，在那里我获得了市场营销与管理信息系统专业的工商管理学士学位，以及管理信息系统专业的理学硕士学位。',
+        aboutP2:'我的专业背景涵盖商业、技术、数据分析和沟通领域。我致力于运用技术解决商业难题、优化决策流程，并将复杂信息转化为清晰且有价值的洞见。通过学术研究和项目实践，我掌握了数据分析、可视化、研究以及技术问题解决等技能，并熟练运用Python、Java、JavaScript、R、SAS、ArcGIS Pro、Tableau和Microsoft Excel等工具。',
+        aboutP3:'在本科学习期间，我通过BUSI 3302课程《连接鲍尔与商业》担任Insperity企业项目的首席研究员。在此职位上，我协助开展了一项针对150多名学生的数据驱动型调研，旨在更深入地了解学生的动机及招聘偏好。我与八人团队通力合作，分析问卷反馈，并将研究结果转化为对项目有价值的洞见。这一经历显著提升了我的数据处理能力、成果传达能力，并让我能够从分析视角和以人为本的双重视角来应对商业挑战。 Pro、Tableau和Microsoft Excel等工具。',
+        aboutP4:'我还曾在休斯顿大学担任管理信息系统（MIS）和商业分析课程的助教。在此期间，我通过批改作业、考试、仪表盘、分析项目和演示文稿，为面授和在线课程提供了支持。此外，我还通过办公时间、讨论区及一对一辅导等方式协助学生，尤其在Tableau仪表盘、数据可视化、分析概念以及项目故障排除方面提供支持。这些经历使我更擅长清晰地讲解技术性话题，给予建设性的反馈，并帮助他人建立对数据和技术的信心。',
+        aboutP5:'在课堂之外，我通过亚洲商科学生协会（ABSA）、管理信息系统学生组织（MISSO）以及鲍尔本科生中心（Bauer Undergraduate Center），积累了领导力、指导他人及专业实践方面的经验。作为ABSA的活跃成员，我参加了各类专业活动、研讨会及人脉拓展活动，这些经历帮助我拓展了行业知识，并提升了职业准备度。我还荣获了“最活跃会员奖学金”和“社区服务奖学金”。通过MISSO，我进一步拓展了对技术、商业系统、数据分析及管理信息系统相关职业道路的兴趣，同时与该领域的同龄人和专业人士建立了联系。作为鲍尔本科生中心的导师，我为学员提供职业建议、个人发展指导及校园活动参与建议，并协助营造了一个支持学生成长的良好环境。',
+        aboutP6:'我精通英语和普通话，这使我能够与不同背景的人建立联系，并进行跨文化沟通。无论是分析数据、构建仪表盘、为学生提供支持，还是参与项目协作，我都乐于探索各种方法，让信息更易于理解，并为决策提供更有价值的参考。',
+        aboutP7:'我的目标是在商业与技术的交汇领域持续发展，特别是从事那些能让我运用管理信息系统（MIS）、数据分析和问题解决技能，从而产生实际影响的工作。',
+        footerText: '@ 范乐 | 作品集',
+        contactLink: '联系我'
+      }
+    };
+
+    const langButton = document.getElementById('lang-toggle');
+    const preferred = localStorage.getItem('portfolio-lang') || 'en';
+
+    function setLanguage(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.dataset.i18n;
+        if (translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+      langButton.textContent = lang === 'en' ? '中文' : 'EN';
+      localStorage.setItem('portfolio-lang', lang);
+    }
+
+    setLanguage(preferred);
+
+    langButton.addEventListener('click', () => {
+      const next = document.documentElement.lang === 'en' ? 'zh' : 'en';
+      setLanguage(next);
+    });
+  </script>
+</body>
+</html>

@@ -31,6 +31,12 @@ body {
   text-decoration: none;
 }
 
+.brand-logo {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
 .dropdown {
   position: relative;
 }
@@ -164,6 +170,52 @@ main {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
+.story-layout {
+  max-width: 980px;
+  line-height: 1.55;
+}
+
+.story-layout p {
+  margin: 0 0 0.95rem;
+  font-size: 1.02rem;
+}
+
+.float-img {
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  margin: 0.2rem 1rem 0.8rem;
+}
+
+.float-img.left {
+  float: left;
+  margin-left: 0;
+}
+
+.float-img.right {
+  height: 300px;
+  width: auto;
+  float: right;
+  margin-right: 0;
+}
+
+.profile-img {
+  width: 240px;
+}
+
+.logo-img {
+  height: 150px;
+  width: auto;
+  float: right;
+  margin-right: 0;
+}
+
+.story-layout::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
 footer {
   text-align: center;
   padding: 1.2rem;
@@ -184,6 +236,17 @@ footer a {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .float-img,
+  .float-img.left,
+  .float-img.right,
+  .logo-img,
+  .profile-img {
+    float: none;
+    display: block;
+    width: min(100%, 320px);
+    margin: 0.35rem auto 0.8rem;
   }
 }
 

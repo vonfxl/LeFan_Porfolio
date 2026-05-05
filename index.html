@@ -8,10 +8,14 @@
 </head>
 <body>
   <nav class="top-nav">
-    <div class="brand" data-i18n="brand">Le Fan Portfolio</div>
+    <div class="brand">
+      <a href="#home" aria-label="Le Fan Portfolio home">
+        <img src="Mlogo.png" alt="Le Fan Portfolio logo" class="brand-logo">
+      </a>
+    </div>
     <ul class="nav-links">
       <li><a href="#home" data-i18n="navHome">Home</a></li>
-      <li><a href="#about" data-i18n="navAbout">About</a></li>
+      <li><a href="about me.html" data-i18n="navAbout">About</a></li>
       <li class="dropdown">
         <a href="#projects" data-i18n="navProjects">Projects ▾</a>
         <ul class="dropdown-menu">
@@ -20,7 +24,7 @@
           <li><a href="PPT.html" data-i18n="projPpt">PowerPoint Gallery</a></li>
         </ul>
       </li>
-      <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+      <li><a href="https://www.linkedin.com/in/le-fan/" data-i18n="navContact">Contact</a></li>
     </ul>
     <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">中文</button>
   </nav>
@@ -74,7 +78,6 @@
   <script>
     const translations = {
       en: {
-        brand: 'Le Fan Portfolio',
         navHome: 'Home',
         navAbout: 'About',
         navProjects: 'Projects',
@@ -98,7 +101,6 @@
         contactLink: 'Contact Us'
       },
       zh: {
-        brand: '范乐作品集',
         navHome: '首页',
         navAbout: '关于我',
         navProjects: '项目',
