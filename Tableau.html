@@ -37,9 +37,10 @@
     <img src="Tableau_sheet2.png" alt="EarlyWork2">
   </div>
   <ul class="desc">
-    <li><strong data-i18n="earlyHead">Early-Semester Work – Foundational Tableau Skills</strong><br>
-      This early project focused on learning core Tableau techniques such as scatterplots, mapping, filters, and trendline analysis. I explored how different factors relate to property values and experimented with geographic visualizations using precinct-level crime data. At this stage, my work emphasized building confidence with data cleaning, joining datasets, applying basic calculations, and creating clear, functional visual dashboards.
-    </li>
+    <li><strong data-i18n="earlyHead">Early-Semester Work – Foundational Tableau Skills</strong></li><br>
+      <p data-i18n="aboutP1">
+        This early project focused on learning core Tableau techniques such as scatterplots, mapping, filters, and trendline analysis. I explored how different factors relate to property values and experimented with geographic visualizations using precinct-level crime data. At this stage, my work emphasized building confidence with data cleaning, joining datasets, applying basic calculations, and creating clear, functional visual dashboards.
+      </p>
   </ul>
   
   <h2 data-i18n="late">📈 Below is from end of the semester</h2>
@@ -53,36 +54,38 @@
   </div>
   <ul class="desc">
   <li>
-    <strong>Project Overview</strong><br>
+    <strong data-i18n="aboutT1">Project Overview</strong><br>
+    <p data-i18n="aboutP2">
     This project analyzes large-scale anime data from MyAnimeList to understand what drives popularity, ratings, studio performance, and staff impact in the U.S. anime market. The final output is an interactive Tableau dashboard that helps users explore trends across anime titles, genres, studios, and creative contributors over time.
+    </p>
   </li>
 
   <li>
-    <strong>Problem Statement</strong><br>
-    The goal was to answer key business questions such as:<br>
-    – What is the relationship between anime ratings and popularity?<br>
-    – Which studios balance quality and production volume most effectively?<br>
-    – How do staff popularity and roles relate to anime success?<br>
-    – How has anime production evolved over time?
+    <strong data-i18n="aboutT2">Problem Statement</strong><br>
+    <p data-i18n="p1">The goal was to answer key business questions such as:</p>
+    <p data-i18n="p2">– What is the relationship between anime ratings and popularity?</p>
+    <p data-i18n="p3">– Which studios balance quality and production volume most effectively?</p>
+    <p data-i18n="p4">– How do staff popularity and roles relate to anime success?</p>
+    <p data-i18n="p5">– How has anime production evolved over time?</p>
   </li>
 
   <li>
-    <strong>Approach</strong><br>
-    – Cleaned and standardized multi-value fields (genres, studios, staff positions) to reduce noise and duplication.<br>
-    – Built derived metrics for popularity, ratings, production volume, and staff influence.<br>
-    – Used LOD calculations to ensure accurate aggregation across many-to-many relationships.<br>
-    – Designed interactive dashboards with global filters (e.g., year range) for consistent cross-view analysis.
+    <strong data-i18n="aboutT3">Approach</strong><br>
+    <p data-i18n="p6">– Cleaned and standardized multi-value fields (genres, studios, staff positions) to reduce noise and duplication.</p>
+    <p data-i18n="p7">– Built derived metrics for popularity, ratings, production volume, and staff influence.</p>
+    <p data-i18n="p8">– Used LOD calculations to ensure accurate aggregation across many-to-many relationships.</p>
+    <p data-i18n="p9">– Designed interactive dashboards with global filters (e.g., year range) for consistent cross-view analysis.</p>
   </li>
 
   <li>
-    <strong>Results & Impact</strong><br>
-    – Ratings and popularity show a positive but weak correlation, indicating success is driven by more than quality alone.<br>
-    – High-volume studios tend to have average ratings, while some lower-volume studios consistently achieve higher quality.<br>
-    – Popular staff and voice actors are frequently associated with high-engagement anime.<br>
-    – Action, Fantasy, and Adventure dominate both production and audience interest.<br>
-    – Anime production has grown rapidly over time, while average ratings remain stable.<br><br>
+    <strong data-i18n="aboutT4">Results & Impact</strong><br>
+    <p data-i18n="p10">– Ratings and popularity show a positive but weak correlation, indicating success is driven by more than quality alone.</p>
+    <p data-i18n="p11">– High-volume studios tend to have average ratings, while some lower-volume studios consistently achieve higher quality.</p>
+    <p data-i18n="p12">– Popular staff and voice actors are frequently associated with high-engagement anime.</p>
+    <p data-i18n="p13">– Action, Fantasy, and Adventure dominate both production and audience interest.</p>
+    <p data-i18n="p14">– Anime production has grown rapidly over time, while average ratings remain stable.</p><br><br>
 
-    <strong>Impact:</strong> The dashboard enables data-driven insight into content performance, talent influence, and studio strategy, supporting smarter decisions for production, licensing, and platform investment.
+    <strong data-i18n="aboutT5">Impact:</strong> <p data-i18n="p15">The dashboard enables data-driven insight into content performance, talent influence, and studio strategy, supporting smarter decisions for production, licensing, and platform investment.</p>
   </li>
 </ul>
   </section>
@@ -94,7 +97,87 @@
   </footer>
 
 <script>
-const translations={en:{brand:'Le Fan Portfolio',home:'Home',about:'About',projects:'Projects ▾',projHomework:'Homework Project',projTableau:'Tableau Dashboard',projPpt:'PowerPoint Gallery',contact:'Contact',title:'My Tableau Dashboards',subtitle:'These are examples of my data visualization work using Tableau.',early:'📊 Below is from early of the semester',earlyHead:'Early-Semester Work – Foundational Tableau Skills',late:'📈 Below is from end of the semester',download:'📥 View / Download on Google Drive',back:'🔙 Back to Home',footer:'@ Le Fan | Tableau Projects',contactUs:'Contact Us'},zh:{brand:'范乐作品集',home:'首页',about:'关于我',projects:'项目 ▾',projHomework:'作业项目',projTableau:'Tableau 看板',projPpt:'PPT 展示',contact:'联系',title:'我的 Tableau 数据看板',subtitle:'以下是我使用 Tableau 完成的数据可视化作品。',early:'📊 以下是学期初的作品',earlyHead:'学期初作品 — Tableau 基础技能',late:'📈 以下是学期末的作品',download:'📥 在 Google Drive 查看 / 下载',back:'🔙 返回首页',footer:'@ 范乐 | Tableau 项目',contactUs:'联系我'}};
+const translations={
+  en:{
+      brand:'Le Fan Portfolio',
+      home:'Home',
+      about:'About',
+      projects:'Projects ▾',
+      projHomework:'Homework Project',
+      projTableau:'Tableau Dashboard',
+      projPpt:'PowerPoint Gallery',
+      contact:'Contact',
+      title:'My Tableau Dashboards',
+      subtitle:'These are examples of my data visualization work using Tableau.',
+      early:'📊 Below is from early of the semester',
+      earlyHead:'Early-Semester Work – Foundational Tableau Skills',
+      aboutP1:'This early project focused on learning core Tableau techniques such as scatterplots, mapping, filters, and trendline analysis. I explored how different factors relate to property values and experimented with geographic visualizations using precinct-level crime data. At this stage, my work emphasized building confidence with data cleaning, joining datasets, applying basic calculations, and creating clear, functional visual dashboards.',
+      late:'📈 Below is from end of the semester',
+      aboutT1:'Project Overview',
+      aboutP2:'This project analyzes large-scale anime data from MyAnimeList to understand what drives popularity, ratings, studio performance, and staff impact in the U.S. anime market. The final output is an interactive Tableau dashboard that helps users explore trends across anime titles, genres, studios, and creative contributors over time.',
+      aboutT2:'Problem Statement',
+      p1:'The goal was to answer key business questions such as:',
+      p2:'– What is the relationship between anime ratings and popularity?',
+      p3:'– Which studios balance quality and production volume most effectively?',
+      p4:'– How do staff popularity and roles relate to anime success?',
+      p5:'– How has anime production evolved over time?',
+      aboutT3:'Approach',
+      p6:'– Cleaned and standardized multi-value fields (genres, studios, staff positions) to reduce noise and duplication.',
+      p7:'– Built derived metrics for popularity, ratings, production volume, and staff influence.',
+      p8:'– Used LOD calculations to ensure accurate aggregation across many-to-many relationships.',
+      p9:'– Designed interactive dashboards with global filters (e.g., year range) for consistent cross-view analysis.',
+      aboutT4:'Results & Impact',
+      p10:'– Ratings and popularity show a positive but weak correlation, indicating success is driven by more than quality alone.',
+      p11:'– High-volume studios tend to have average ratings, while some lower-volume studios consistently achieve higher quality.',
+      p12:'– Popular staff and voice actors are frequently associated with high-engagement anime.',
+      p13:'– Action, Fantasy, and Adventure dominate both production and audience interest.',
+      p14:'– Anime production has grown rapidly over time, while average ratings remain stable.',
+      aboutT5:'Impact:',
+      p15:'The dashboard enables data-driven insight into content performance, talent influence, and studio strategy, supporting smarter decisions for production, licensing, and platform investment.',
+      download:'📥 View / Download on Google Drive',
+      back:'🔙 Back to Home',
+      footer:'@ Le Fan | Tableau Projects',
+      contactUs:'Contact Us'},
+  zh:{
+      brand:'范乐作品集',
+      home:'首页',
+      about:'关于我',
+      projects:'项目 ▾',
+      projHomework:'作业项目',
+      projTableau:'Tableau 看板',
+      projPpt:'PPT 展示',
+      contact:'联系',
+      title:'我的 Tableau 数据看板',
+      subtitle:'以下是我使用 Tableau 完成的数据可视化作品。',
+      early:'📊 以下是学期初的作品',
+      earlyHead:'学期初作品 — Tableau 基础技能',
+      aboutP1:'这个早期项目侧重于学习 Tableau 的核心技术，例如散点图、地图可视化、筛选器以及趋势线分析。我研究了不同因素与房产价值之间的关联，并利用选区级别的犯罪数据尝试了地理可视化。在此阶段，我的工作重点在于通过数据清洗、数据集关联、应用基础计算以及创建清晰且实用的可视化仪表板来增强数据处理能力。',
+      late:'📈 以下是学期末的作品',
+      aboutT1:'项目梗概',
+      aboutP2:'该项目通过分析MyAnimeList上的海量动漫数据，旨在探究美国动漫市场中作品人气、评分、制作公司表现及创作团队影响力的驱动因素。最终成果是一个交互式Tableau仪表盘，可帮助用户探索不同动漫作品、类型、制作公司及创作人员随时间推移的趋势变化。',
+      aboutT2:'问题陈述',
+      p1:'目标是解答以下关键业务问题：',
+      p2:'– 动画的收视率与人气之间有什么关系？',
+      p3:'– 哪些制片公司最能兼顾质量与产量？',
+      p4:'– 工作人员的人气和角色与动漫的成功有何关联？',
+      p5:'– 动画制作随着时间的推移发生了怎样的演变？',
+      aboutT3:'方法',
+      p6:'– 清理并规范了多值字段（如类型、制片公司、职位等），以减少冗余信息和重复项。',
+      p7:'– 构建了用于衡量人气、评分、制作量及员工影响力的衍生指标。',
+      p8:'– 利用 LOD 计算确保在多对多关系中实现准确的聚合。',
+      p9:'– 设计了带有全局筛选器（例如年份范围）的交互式仪表盘，以实现跨视图的一致性分析。',
+      aboutT4:'结果',
+      p10:'– 收视率与人气之间存在正相关关系，但相关性较弱，这表明成功不仅仅取决于质量。',
+      p11:'– 接单量大的工作室通常评分平平，而一些接单量较小的工作室却能持续保持较高的质量。',
+      p12:'– 人气制作团队和声优往往与高参与度的动画作品联系在一起。',
+      p13:'– 动作、奇幻和冒险题材在影视制作和观众关注度方面均占据主导地位。',
+      p14:'– 随着时间的推移，动画制作量迅速增长，而平均收视率则保持稳定。',
+      aboutT5:'影响:',
+      p15:'该仪表盘能够基于数据深入分析内容表现、人才影响力及工作室战略，从而为制作、授权和平台投资提供更明智的决策支持。',
+      download:'📥 在 Google Drive 查看 / 下载',
+      back:'🔙 返回首页',
+      footer:'@ 范乐 | Tableau 项目',
+      contactUs:'联系我'}};
 const btn=document.getElementById('lang-toggle');
 function setLanguage(lang){document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(translations[lang][k])el.textContent=translations[lang][k];});btn.textContent=lang==='en'?'中文':'EN';localStorage.setItem('portfolio-lang',lang);} 
 setLanguage(localStorage.getItem('portfolio-lang')||'en');
