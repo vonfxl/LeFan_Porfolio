@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Portfolio</title>
+  <title>Projects | Le Fan Portfolio</title>
   <link rel="stylesheet" href="Portfolio.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
       </a>
     </div>
     <ul class="nav-links">
-      <li><a href="#home" data-i18n="navHome">Home</a></li>
+      <li><a href="index.html" data-i18n="navHome">Home</a></li>
       <li><a href="about me.html" data-i18n="navAbout">About</a></li>
       <li class="dropdown">
         <a href="Projects.html" data-i18n="navProjects">Projects ▾</a>
@@ -26,71 +26,49 @@
       </li>
       <li><a href="https://www.linkedin.com/in/le-fan/" data-i18n="navContact">Contact</a></li>
     </ul>
-    <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">中文</button>
+    <button id="lang-toggle" class="lang-toggle">中文</button>
   </nav>
 
-  <header id="home">
-    <h1 data-i18n="welcome">Welcome to My Portfolio</h1>
-    <p data-i18n="subtitle">Explore my projects from school below 👇</p>
+  <header>
+    <h1>Projects</h1>
+    <p>Hover over each project to preview it, then click to open.</p>
   </header>
 
-  <section id="about" class="content-section">
-    <div class="about-text">
-      <h1>Le Fan</h1>
-      <h2 data-i18n="degree">Master of Business Administration In MIS</h2>
-      <h3 class="about-heading" data-i18n="aboutTitle">About Me</h3>
-      <p data-i18n="aboutP1">
-        Hi, I’m Le Fan — a data-driven problem solver with strong technical skills in Python, Java, JavaScript, Tableau, SAS, Excel, and ArcGIS. I love turning raw data into clear insights, building clean visual dashboards, and creating user-friendly digital solutions.
-      </p>
-      <p data-i18n="aboutP2">
-        I learn fast, communicate clearly, and enjoy breaking down complex information into something simple and useful. With strengths in analytics, design, and technical tools—not just experience—I bring curiosity, precision, and creativity to every project.
-      </p>
-    </div>
-    <div class="about-img">
-      <img src="ME.jpg" alt="My headshot" />
-    </div>
-  </section>
-
-  <main id="projects">
+  <main>
     <section class="card-container">
-      <a href="Homework_3.html" class="card">
+      <a href="Homework_3.html" class="card project-preview-card project-homework">
         <h2 data-i18n="card1Title">HTML + CSS + JavaScript Project</h2>
         <p data-i18n="card1Text">A full website I built in class.</p>
       </a>
 
-      <a href="Tableau.html" class="card">
+      <a href="Tableau.html" class="card project-preview-card project-tableau">
         <h2 data-i18n="card2Title">Tableau Dashboard</h2>
         <p data-i18n="card2Text">See my data visualization work using Tableau.</p>
       </a>
 
-      <a href="PPT.html" class="card">
+      <a href="PPT.html" class="card project-preview-card project-ppt">
         <h2 data-i18n="card3Title">PowerPoint Presentation</h2>
         <p data-i18n="card3Text">See my PowerPoint presentation.</p>
       </a>
     </section>
   </main>
 
-  <footer id="contact">
-    <p data-i18n="footerText">@ Le Fan | Portfolio</p>
-    <a href="https://www.linkedin.com/in/le-fan/" data-i18n="contactLink">Contact Us</a>
+  <footer>
+    <p>@ Le Fan | Portfolio</p>
+    <a href="https://www.linkedin.com/in/le-fan/">Contact Us</a>
   </footer>
-
   <script>
     const translations = {
       en: {
         navHome: 'Home',
         navAbout: 'About',
         navProjects: 'Projects',
-        projHomework: 'Homework Project',
+        projHomework: 'Application Project',
         projTableau: 'Tableau Dashboard',
         projPpt: 'PowerPoint Gallery',
         navContact: 'Contact',
         welcome: 'Welcome to My Portfolio',
         subtitle: 'Explore my projects from school below 👇',
-        degree: 'Master of Business Administration In MIS',
-        aboutTitle: 'About Me',
-        aboutP1: 'Hi, I’m Le Fan — a data-driven problem solver with strong technical skills in Python, Java, JavaScript, Tableau, SAS, Excel, and ArcGIS. I love turning raw data into clear insights, building clean visual dashboards, and creating user-friendly digital solutions.',
-        aboutP2: 'I learn fast, communicate clearly, and enjoy breaking down complex information into something simple and useful. With strengths in analytics, design, and technical tools—not just experience—I bring curiosity, precision, and creativity to every project.',
         card1Title: 'HTML + CSS + JavaScript Project',
         card1Text: 'A full website I built in class.',
         card2Title: 'Tableau Dashboard',
@@ -104,16 +82,12 @@
         navHome: '首页',
         navAbout: '关于我',
         navProjects: '项目',
-        projHomework: 'Application 项目',
+        projHomework: 'Application项目',
         projTableau: 'Tableau 看板',
         projPpt: 'PPT 展示',
         navContact: '联系',
         welcome: '欢迎来到我的作品集',
         subtitle: '在下方查看我的课程项目 👇',
-        degree: '工商管理硕士（信息系统管理方向）',
-        aboutTitle: '关于我',
-        aboutP1: '你好，我是范乐——一名以数据驱动的解决问题者，熟练掌握 Python、Java、JavaScript、Tableau、SAS、Excel 和 ArcGIS。我热衷于将原始数据转化为清晰洞察，构建简洁直观的可视化仪表板，以及打造用户友好的数字化解决方案。',
-        aboutP2: '我学习速度快、沟通清晰，擅长把复杂信息拆解成简单且有价值的内容。凭借在分析、设计和技术工具方面的能力——而不仅仅是经验——我会在每个项目中带来好奇心、严谨性和创造力。',
         card1Title: 'HTML + CSS + JavaScript 项目',
         card1Text: '这是我在课程中完成的完整网站。',
         card2Title: 'Tableau 数据看板',

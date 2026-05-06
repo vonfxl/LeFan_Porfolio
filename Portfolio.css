@@ -292,3 +292,46 @@ footer a {
 .download-btn:hover {
   background-color: #39c8ec;
 }
+/* Projects page preview cards */
+.project-preview-card {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  color: #111827;
+}
+
+.project-preview-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.9);
+  transition: background 0.25s ease;
+  z-index: 0;
+}
+
+.project-preview-card h2,
+.project-preview-card p {
+  position: relative;
+  z-index: 1;
+}
+
+.project-preview-card:hover {
+  color: #ffffff;
+}
+
+.project-preview-card:hover::before {
+  background: rgba(17, 24, 39, 0.46);
+}
+
+.project-homework {
+  background-image: url('web-background1.png');
+}
+
+.project-tableau {
+  background-image: url('Tableau_Dashboard1.png');
+}
+
+.project-ppt {
+  background-image: url('Presentation_1.gif');
+}
