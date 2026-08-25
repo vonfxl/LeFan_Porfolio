@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teaching Assistant Experience | Le Fan Portfolio</title>
+  <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body class="ta-page">
+  <nav class="top-nav">
+    <div class="brand"><a href="index.html" aria-label="Le Fan Portfolio home"><img src="Mlogo.png" alt="Le Fan Portfolio logo" class="brand-logo"></a></div>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="navHome">Home</a></li>
+      <li><a href="about me.html" data-i18n="navAbout">About</a></li>
+      <li><a href="Experience.html" data-i18n="navExperience">Experience</a></li>
+      <li class="dropdown"><a href="Projects.html" data-i18n="navProjects">Projects ▾</a><ul class="dropdown-menu"><li><a href="Homework_3.html">Application Project</a></li><li><a href="Tableau.html">Tableau Dashboard</a></li><li><a href="PPT.html">PowerPoint Gallery</a></li></ul></li>
+      <li><a href="https://www.linkedin.com/in/le-fan/" data-i18n="navContact">Contact</a></li>
+    </ul>
+    <button id="lang-toggle" class="lang-toggle">中文</button>
+  </nav>
+  <header>
+    <h1 data-i18n="title">Teaching Assistant</h1>
+    <p data-i18n="organization">C. T. Bauer College of Business, University of Houston</p>
+  </header>
+  <main>
+    <article class="experience-detail">
+      <a class="back-link" href="Experience.html" data-i18n="back">← Back to Experience</a>
+      <p><strong data-i18n="roleLabel">Role:</strong> <span data-i18n="role">Teaching Assistant, Graduate &amp; Undergraduate Courses</span></p>
+      <p><strong data-i18n="dateLabel">Dates:</strong> <span data-i18n="date">January 2026 – May 2026</span></p>
+      <h2 data-i18n="responsibilities">Responsibilities</h2>
+      <ul>
+        <li data-i18n="bullet1">Supported approximately 120 students across four graduate and undergraduate courses in face-to-face and online formats.</li>
+        <li data-i18n="bullet2">Assisted with Tableau dashboards, data visualization, R programming, data cleaning, statistical analysis, and analytical problem-solving.</li>
+        <li data-i18n="bullet3">Helped students troubleshoot R syntax, Tableau calculations, coding assignments, and data-analysis errors during virtual office hours.</li>
+        <li data-i18n="bullet4">Coordinated grading, feedback, student communication, and substitute classroom coverage.</li>
+      </ul>
+      <h2 data-i18n="skillsTitle">Skills Applied</h2>
+      <p data-i18n="skills">R programming, Tableau, data visualization, statistical analysis, teaching, technical troubleshooting, grading, and student communication.</p>
+    </article>
+  </main>
+  <footer><p data-i18n="footer">@ Le Fan | Portfolio</p><a href="https://www.linkedin.com/in/le-fan/" data-i18n="contact">Contact Us</a></footer>
+  <script>
+    const translations={en:{navHome:'Home',navAbout:'About',navExperience:'Experience',navProjects:'Projects ▾',navContact:'Contact',title:'Teaching Assistant',organization:'C. T. Bauer College of Business, University of Houston',back:'← Back to Experience',roleLabel:'Role:',role:'Teaching Assistant, Graduate & Undergraduate Courses',dateLabel:'Dates:',date:'January 2026 – May 2026',responsibilities:'Responsibilities',bullet1:'Supported approximately 120 students across four graduate and undergraduate courses in face-to-face and online formats.',bullet2:'Assisted with Tableau dashboards, data visualization, R programming, data cleaning, statistical analysis, and analytical problem-solving.',bullet3:'Helped students troubleshoot R syntax, Tableau calculations, coding assignments, and data-analysis errors during virtual office hours.',bullet4:'Coordinated grading, feedback, student communication, and substitute classroom coverage.',skillsTitle:'Skills Applied',skills:'R programming, Tableau, data visualization, statistical analysis, teaching, technical troubleshooting, grading, and student communication.',footer:'@ Le Fan | Portfolio',contact:'Contact Us'},zh:{navHome:'首页',navAbout:'关于我',navExperience:'经历',navProjects:'项目 ▾',navContact:'联系',title:'助教',organization:'休斯顿大学 C. T. Bauer 商学院',back:'← 返回经历',roleLabel:'职位：',role:'研究生及本科课程助教',dateLabel:'日期：',date:'2026年1月 – 2026年5月',responsibilities:'工作职责',bullet1:'协助四门研究生及本科课程的约 120 名学生，涵盖面授和在线形式。',bullet2:'协助完成 Tableau 仪表板、数据可视化、R 编程、数据清理、统计分析和分析问题求解。',bullet3:'在线上答疑期间帮助学生排查 R 语法、Tableau 计算、编程作业和数据分析错误。',bullet4:'协调评分、反馈、学生沟通和代课安排。',skillsTitle:'运用技能',skills:'R 编程、Tableau、数据可视化、统计分析、教学、技术故障排除、评分和学生沟通。',footer:'@ 范乐 | 作品集',contact:'联系我'}};
+    const button=document.getElementById('lang-toggle');function setLanguage(lang){document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{const value=translations[lang][el.dataset.i18n];if(value)el.textContent=value});button.textContent=lang==='en'?'中文':'EN';localStorage.setItem('portfolio-lang',lang)}setLanguage(localStorage.getItem('portfolio-lang')||'en');button.addEventListener('click',()=>setLanguage(document.documentElement.lang==='en'?'zh':'en'));
+  </script>
+</body>
+</html>
