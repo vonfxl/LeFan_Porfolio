@@ -1,6 +1,9 @@
 /* homepage */
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: 'Segoe UI', sans-serif;
   background: #f4f6fb;
   color: #1f2937;
@@ -99,15 +102,19 @@ body {
 
 header {
   text-align: center;
-  padding: 4rem 1rem 2.5rem;
-  background: linear-gradient(135deg, #0284c7, #2563eb);
+  padding: 2.88rem 1rem 1.8rem;
+  background: linear-gradient(135deg, rgba(51, 65, 85, 0.76), rgba(100, 116, 139, 0.58));
+  backdrop-filter: blur(3px);
   color: white;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.14);
 }
 
 main {
   display: flex;
   justify-content: center;
   padding: 2rem;
+  flex: 1;
 }
 
 .card-container {
@@ -293,6 +300,37 @@ footer a {
   background-color: #39c8ec;
 }
 /* Projects page preview cards */
+.projects-page main {
+  padding: 3rem 2rem;
+  align-items: center;
+}
+
+.projects-page .card-container {
+  max-width: 1060px;
+  gap: 1.6rem;
+}
+
+.projects-page .project-preview-card {
+  min-height: 130px;
+  padding: 2.2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-position: center;
+}
+
+.projects-page .project-preview-card h2 {
+  font-size: clamp(1.45rem, 2.2vw, 1.85rem);
+  margin-bottom: 0.7rem;
+}
+
+.projects-page .project-preview-card p {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
 .project-preview-card {
   position: relative;
   overflow: hidden;
@@ -320,6 +358,7 @@ footer a {
   color: #ffffff;
 }
 
+
 .project-preview-card:hover::before {
   background: rgba(17, 24, 39, 0.46);
 }
@@ -334,4 +373,255 @@ footer a {
 
 .project-ppt {
   background-image: url('Presentation_1.gif');
+}
+
+
+/* Experience page */
+.experience-page {
+  position: relative;
+  isolation: isolate;
+  background: #e8eef5;
+}
+
+.experience-background-video {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.experience-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: transparent;
+  pointer-events: none;
+}
+
+.experience-page header,
+.projects-page header {
+  background: linear-gradient(135deg, rgba(51, 65, 85, 0.76), rgba(100, 116, 139, 0.58));
+  color: #fff;
+  backdrop-filter: blur(3px);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.42);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.experience-page main {
+  background: transparent;
+}
+
+.experience-page footer {
+  background: rgba(229, 231, 235, 0.92);
+  backdrop-filter: blur(5px);
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: min(100%, 920px);
+}
+
+.experience-card {
+  display: block;
+  padding: 1.6rem;
+  border: 1px solid #e5e7eb;
+  border-left: 5px solid #0284c7;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-left-color 0.2s ease;
+}
+
+.experience-card:hover,
+.experience-card:focus-visible {
+  transform: translateY(-4px);
+  border-left-color: #2563eb;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.14);
+}
+
+.experience-card:focus-visible {
+  outline: 3px solid rgba(14, 165, 233, 0.35);
+  outline-offset: 3px;
+}
+
+.experience-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.experience-heading h2 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.experience-heading time {
+  flex-shrink: 0;
+  color: #0369a1;
+  font-weight: 700;
+}
+
+.experience-role {
+  margin: 0.4rem 0 0;
+  color: #475569;
+  font-weight: 600;
+}
+
+.experience-card ul {
+  margin: 1.2rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.experience-card li {
+  margin-bottom: 0.65rem;
+  line-height: 1.55;
+}
+
+.experience-link {
+  display: inline-block;
+  margin-top: 0.4rem;
+  color: #0369a1;
+  font-weight: 700;
+}
+
+.experience-detail {
+  width: min(100%, 920px);
+  padding: 2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+  line-height: 1.65;
+}
+
+.operation-page main {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)),
+    url('MSM-22-scaled.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.operation-page header {
+  position: relative;
+  padding: 4.5rem 1rem 4.05rem;
+  background-image:
+    linear-gradient(135deg, rgba(51, 65, 85, 0.68), rgba(100, 116, 139, 0.48)),
+    url('MSM-22-scaled.jpg');
+  background-position: center 38%;
+  background-size: cover;
+  background-attachment: fixed;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.operation-page header h1 {
+  margin-bottom: 0.65rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: 0.02em;
+}
+
+.operation-page header p {
+  margin: 0;
+  font-size: 1.08rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.ta-page main {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)),
+    url('TA-background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.ta-page header {
+  position: relative;
+  padding: 4.5rem 1rem 4.05rem;
+  background-image:
+    linear-gradient(135deg, rgba(51, 65, 85, 0.68), rgba(100, 116, 139, 0.48)),
+    url('TA-background.jpg');
+  background-position: center 42%;
+  background-size: cover;
+  background-attachment: fixed;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.ta-page header h1 {
+  margin-bottom: 0.65rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: 0.02em;
+}
+
+.ta-page header p {
+  margin: 0;
+  font-size: 1.08rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.ta-page .experience-detail {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(3px);
+}
+
+.operation-page .experience-detail {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(3px);
+}
+
+.experience-detail h2 {
+  margin-top: 1.8rem;
+  color: #0f172a;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #0369a1;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 620px) {
+  .experience-heading {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .operation-page header,
+  .operation-page main,
+  .ta-page header,
+  .ta-page main {
+    background-attachment: scroll;
+  }
+
+  .projects-page main {
+    padding: 1.5rem 1rem;
+  }
+
+  .projects-page .project-preview-card {
+    min-height: 105px;
+    padding: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experience-background-video {
+    display: none;
+  }
 }
