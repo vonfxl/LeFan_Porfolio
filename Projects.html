@@ -6,7 +6,10 @@
   <title>Projects | Le Fan Portfolio</title>
   <link rel="stylesheet" href="Portfolio.css">
 </head>
-<body>
+<body class="projects-page">
+  <video class="experience-background-video" autoplay muted loop playsinline aria-hidden="true">
+    <source src="experience-background.mp4" type="video/mp4">
+  </video>
   <nav class="top-nav">
     <div class="brand">
       <a href="#home" aria-label="Le Fan Portfolio home">
@@ -16,6 +19,7 @@
     <ul class="nav-links">
       <li><a href="index.html" data-i18n="navHome">Home</a></li>
       <li><a href="about me.html" data-i18n="navAbout">About</a></li>
+      <li><a href="Experience.html" data-i18n="navExperience">Experience</a></li>
       <li class="dropdown">
         <a href="Projects.html" data-i18n="navProjects">Projects ▾</a>
         <ul class="dropdown-menu">
@@ -53,7 +57,7 @@
     </section>
   </main>
 
-  <footer id="contact">
+ <footer id="contact">
     <p data-i18n="footerText">@ Le Fan | Portfolio</p>
     <a href="https://www.linkedin.com/in/le-fan/" data-i18n="contactLink">Contact Us</a>
   </footer>
@@ -62,6 +66,7 @@
       en: {
         navHome: 'Home',
         navAbout: 'About',
+        navExperience: 'Experience',
         navProjects: 'Projects',
         projHomework: 'Application Project',
         projTableau: 'Tableau Dashboard',
@@ -81,6 +86,7 @@
       zh: {
         navHome: '首页',
         navAbout: '关于我',
+        navExperience: '经历',
         navProjects: '项目',
         projHomework: 'Application项目',
         projTableau: 'Tableau 看板',
