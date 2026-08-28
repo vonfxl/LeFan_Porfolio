@@ -53,3 +53,49 @@
         .ending{
             text-align:center;
             margin-top:50px;}
+
+/* Shared portfolio navigation */
+.top-nav {
+  padding: 1.05rem clamp(1.25rem, 6vw, 7rem);
+  background: rgba(2, 8, 23, 0.88);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.brand-logo {
+  display: block;
+  width: auto;
+  height: 42px;
+  filter: brightness(0) invert(1) drop-shadow(0 2px 8px rgba(255, 255, 255, 0.12));
+  opacity: 0.96;
+}
+
+.nav-links {
+  gap: clamp(1.25rem, 2.7vw, 2.8rem);
+}
+
+.nav-links a {
+  position: relative;
+  font-weight: 500;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -0.7rem;
+  left: 0;
+  height: 2px;
+  background: #8b5cf6;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 760px) {
+  .top-nav { flex-wrap: wrap; }
+  .nav-links { width: 100%; justify-content: center; flex-wrap: wrap; }
+}

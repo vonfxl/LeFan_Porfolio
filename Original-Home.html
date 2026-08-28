@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Original Homepage | Le Fan Portfolio</title>
+  <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="brand"><a href="index.html" aria-label="Return to redesigned homepage"><img src="Mlogo.png" alt="Le Fan Portfolio logo" class="brand-logo"></a></div>
+    <ul class="nav-links">
+      <li><a href="about me.html" data-i18n="navAbout">About</a></li>
+      <li><a href="Experience.html" data-i18n="navExperience">Experience</a></li>
+      <li><a href="Projects.html" data-i18n="navProjects">Projects</a></li>
+      <li><a href="https://www.linkedin.com/in/le-fan/" data-i18n="navContact">Contact</a></li>
+    </ul>
+    <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">中文</button>
+  </nav>
+
+  <header>
+    <h1 data-i18n="welcome">Welcome to My Portfolio</h1>
+    <p data-i18n="subtitle">Explore my work and background below.</p>
+  </header>
+
+  <section class="content-section">
+    <div class="about-text">
+      <h1>Le Fan</h1>
+      <h2 data-i18n="degree">Master of Business Administration in MIS</h2>
+      <h3 data-i18n="degree2">Bachelor of Business Administration in Marketing</h3>
+      <h3 class="about-heading" data-i18n="aboutTitle">About Me</h3>
+      <p data-i18n="aboutP1">Hi, I’m Le Fan — a data-driven problem solver with strong technical skills in Python, Java, JavaScript, Tableau, SAS, Excel, and ArcGIS. I love turning raw data into clear insights, building clean visual dashboards, and creating user-friendly digital solutions.</p>
+      <p data-i18n="aboutP2">I learn fast, communicate clearly, and enjoy breaking down complex information into something simple and useful. I bring curiosity, precision, and creativity to every project.</p>
+    </div>
+    <div class="about-img"><img src="ME.jpg" alt="Portrait of Le Fan"></div>
+  </section>
+
+  <main>
+    <section class="card-container">
+      <a href="Homework_3.html" class="card"><h2 data-i18n="card1Title">HTML + CSS + JavaScript Project</h2><p data-i18n="card1Text">A full website I built in class.</p></a>
+      <a href="Tableau.html" class="card"><h2 data-i18n="card2Title">Tableau Dashboard</h2><p data-i18n="card2Text">See my data visualization work using Tableau.</p></a>
+      <a href="PPT.html" class="card"><h2 data-i18n="card3Title">PowerPoint Presentation</h2><p data-i18n="card3Text">See my PowerPoint presentation.</p></a>
+    </section>
+  </main>
+
+  <footer><p data-i18n="footerText">@ Le Fan | Portfolio</p><a href="https://www.linkedin.com/in/le-fan/" data-i18n="contactLink">Contact Us</a></footer>
+  <script>
+    const translations={en:{newHome:'New Home',navAbout:'About',navExperience:'Experience',navProjects:'Projects',navContact:'Contact',welcome:'Welcome to My Portfolio',subtitle:'Explore my work and background below.',degree:'Master of Business Administration in MIS',degree2:'Bachelor of Business Administration in Marketing',aboutTitle:'About Me',aboutP1:'Hi, I’m Le Fan — a data-driven problem solver with strong technical skills in Python, Java, JavaScript, Tableau, SAS, Excel, and ArcGIS. I love turning raw data into clear insights, building clean visual dashboards, and creating user-friendly digital solutions.',aboutP2:'I learn fast, communicate clearly, and enjoy breaking down complex information into something simple and useful. I bring curiosity, precision, and creativity to every project.',card1Title:'HTML + CSS + JavaScript Project',card1Text:'A full website I built in class.',card2Title:'Tableau Dashboard',card2Text:'See my data visualization work using Tableau.',card3Title:'PowerPoint Presentation',card3Text:'See my PowerPoint presentation.',footerText:'@ Le Fan | Portfolio',contactLink:'Contact Us'},zh:{newHome:'新版首页',navAbout:'关于我',navExperience:'经历',navProjects:'项目',navContact:'联系',welcome:'欢迎来到我的作品集',subtitle:'在下方查看我的作品和个人背景。',degree:'工商管理硕士（信息系统管理方向）',degree2:'市场营销工商管理学士',aboutTitle:'关于我',aboutP1:'你好，我是范乐——一名以数据驱动的解决问题者，熟练掌握 Python、Java、JavaScript、Tableau、SAS、Excel 和 ArcGIS。我热衷于将原始数据转化为清晰洞察，构建简洁直观的可视化仪表板，以及打造用户友好的数字化解决方案。',aboutP2:'我学习速度快、沟通清晰，擅长把复杂信息拆解成简单且有价值的内容。我会在每个项目中带来好奇心、严谨性和创造力。',card1Title:'HTML + CSS + JavaScript 项目',card1Text:'这是我在课程中完成的完整网站。',card2Title:'Tableau 数据看板',card2Text:'查看我使用 Tableau 完成的数据可视化作品。',card3Title:'PowerPoint 演示文稿',card3Text:'查看我的 PowerPoint 演示文稿。',footerText:'@ 范乐 | 作品集',contactLink:'联系我'}};
+    const button=document.getElementById('lang-toggle');function setLanguage(lang){document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{const value=translations[lang][el.dataset.i18n];if(value)el.textContent=value});button.textContent=lang==='en'?'中文 / EN':'中 / English';localStorage.setItem('portfolio-lang',lang)}setLanguage(localStorage.getItem('portfolio-lang')||'en');button.addEventListener('click',()=>setLanguage(document.documentElement.lang==='en'?'zh':'en'));
+  </script>
+</body>
+</html>

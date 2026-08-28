@@ -3,74 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Portfolio</title>
+  <title>Le Fan | Data &amp; Technology Portfolio</title>
   <link rel="stylesheet" href="Portfolio.css">
 </head>
-<body>
+<body class="home-page">
+  <video class="home-background-video" autoplay muted loop playsinline aria-hidden="true">
+    <source src="experience-background.mp4" type="video/mp4">
+  </video>
   <nav class="top-nav">
     <div class="brand">
-      <a href="#home" aria-label="Le Fan Portfolio home">
-        <img src="Mlogo.png" alt="Le Fan Portfolio logo" class="brand-logo">
-      </a>
+      <a href="#home" aria-label="Le Fan Portfolio home"><img src="Mlogo.png" alt="Le Fan Portfolio logo" class="brand-logo"></a>
     </div>
     <ul class="nav-links">
-      <li><a href="#home" data-i18n="navHome">Home</a></li>
       <li><a href="about me.html" data-i18n="navAbout">About</a></li>
       <li><a href="Experience.html" data-i18n="navExperience">Experience</a></li>
-      <li class="dropdown">
-        <a href="Projects.html" data-i18n="navProjects">Projects ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="Homework_3.html" data-i18n="projHomework">Application Project</a></li>
-          <li><a href="Tableau.html" data-i18n="projTableau">Tableau Dashboard</a></li>
-          <li><a href="PPT.html" data-i18n="projPpt">PowerPoint Gallery</a></li>
-        </ul>
-      </li>
+      <li><a href="Projects.html" data-i18n="navProjects">Projects</a></li>
       <li><a href="https://www.linkedin.com/in/le-fan/" data-i18n="navContact">Contact</a></li>
     </ul>
-    <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">中文</button>
+    <button id="lang-toggle" class="lang-toggle home-lang-toggle" aria-label="Switch language">中文 / EN</button>
   </nav>
 
-  <header id="home">
-    <h1 data-i18n="welcome">Welcome to My Portfolio</h1>
-    <p data-i18n="subtitle">Explore my projects from school below 👇</p>
-  </header>
+  <main id="home" class="home-hero">
+    <div class="home-shell">
+      <section class="home-showcase" aria-labelledby="home-title">
+        <div class="home-copy">
+          <p class="home-eyebrow" data-i18n="eyebrow">DATA · ANALYTICS · SOLUTIONS</p>
+          <h1 id="home-title"><span data-i18n="greeting">Hi, I’m</span> <strong>Le Fan.</strong></h1>
+          <p class="home-degrees"><span data-i18n="degreeShort1">MS in MIS</span><br><span data-i18n="degreeShort2">BBA in Marketing</span></p>
+          <span class="home-accent-line" aria-hidden="true"></span>
+          <p class="home-intro" data-i18n="homeIntro">I turn data into insights and build solutions that make complex problems simple to understand and act on.</p>
 
-  <section id="about" class="content-section">
-    <div class="about-text">
-      <h1>Le Fan</h1>
-      <h2 data-i18n="degree">Master of Business Administration In MIS</h2>
-      <h3 data-i18n="degree2">Bachelor of Business Administration in Marketing </h3>
-      <h3 class="about-heading" data-i18n="aboutTitle">About Me</h3>
-      <p data-i18n="aboutP1">
-        Hi, I’m Le Fan — a data-driven problem solver with strong technical skills in Python, Java, JavaScript, Tableau, SAS, Excel, and ArcGIS. I love turning raw data into clear insights, building clean visual dashboards, and creating user-friendly digital solutions.
-      </p>
-      <p data-i18n="aboutP2">
-        I learn fast, communicate clearly, and enjoy breaking down complex information into something simple and useful. With strengths in analytics, design, and technical tools—not just experience—I bring curiosity, precision, and creativity to every project.
-      </p>
+          <div class="home-actions">
+            <a href="Projects.html" class="home-button home-button-primary"><span data-i18n="exploreWork">Explore my work</span><span aria-hidden="true">→</span></a>
+            <a href="https://www.linkedin.com/in/le-fan/" class="home-button home-button-secondary"><span aria-hidden="true">✉</span><span data-i18n="getInTouch">Get in touch</span></a>
+          </div>
+        </div>
+
+        <div class="home-portrait-wrap">
+          <img src="ME.jpg" alt="Portrait of Le Fan" class="home-portrait">
+        </div>
+      </section>
+
+      <section class="home-entry-grid" aria-label="Portfolio sections">
+        <a href="about me.html" class="home-entry-card">
+          <span class="home-entry-icon"><img src="icon-about.png" alt=""></span>
+          <h2 data-i18n="entryAbout">About</h2>
+          <p data-i18n="entryAboutText">Get to know me, my background, and what drives me.</p>
+          <span class="home-entry-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="Experience.html" class="home-entry-card">
+          <span class="home-entry-icon"><img src="icon-experience.png" alt=""></span>
+          <h2 data-i18n="entryExperience">Experience</h2>
+          <p data-i18n="entryExperienceText">See my academic journey, skills, and professional growth.</p>
+          <span class="home-entry-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="Projects.html" class="home-entry-card home-entry-projects">
+          <span class="home-entry-icon"><img src="icon-projects.png" alt=""></span>
+          <h2 data-i18n="entryProjects">Projects</h2>
+          <p data-i18n="entryProjectsText">Explore a growing collection of projects and work.</p>
+          <span class="home-entry-arrow" aria-hidden="true">→</span>
+        </a>
+      </section>
     </div>
-    <div class="about-img">
-      <img src="ME.jpg" alt="My headshot" />
-    </div>
-  </section>
-
-  <main id="projects">
-    <section class="card-container">
-      <a href="Homework_3.html" class="card">
-        <h2 data-i18n="card1Title">HTML + CSS + JavaScript Project</h2>
-        <p data-i18n="card1Text">A full website I built in class.</p>
-      </a>
-
-      <a href="Tableau.html" class="card">
-        <h2 data-i18n="card2Title">Tableau Dashboard</h2>
-        <p data-i18n="card2Text">See my data visualization work using Tableau.</p>
-      </a>
-
-      <a href="PPT.html" class="card">
-        <h2 data-i18n="card3Title">PowerPoint Presentation</h2>
-        <p data-i18n="card3Text">See my PowerPoint presentation.</p>
-      </a>
-    </section>
   </main>
+
+  <a href="Original-Home.html" class="legacy-home-link" title="Open original homepage" aria-label="Open original homepage">＊</a>
 
   <footer id="contact">
     <p data-i18n="footerText">@ Le Fan | Portfolio</p>
@@ -88,8 +85,19 @@
         projTableau: 'Tableau Dashboard',
         projPpt: 'PowerPoint Gallery',
         navContact: 'Contact',
-        welcome: 'Welcome to My Portfolio',
-        subtitle: 'Explore my projects from school below 👇',
+        eyebrow: 'DATA · ANALYTICS · SOLUTIONS',
+        greeting: 'Hi, I’m',
+        degreeShort1: 'MS in MIS',
+        degreeShort2: 'BBA in Marketing',
+        homeIntro: 'I turn data into insights and build solutions that make complex problems simple to understand and act on.',
+        exploreWork: 'Explore my work',
+        getInTouch: 'Get in touch',
+        entryAbout: 'About',
+        entryAboutText: 'Get to know me, my background, and what drives me.',
+        entryExperience: 'Experience',
+        entryExperienceText: 'See my academic journey, skills, and professional growth.',
+        entryProjects: 'Projects',
+        entryProjectsText: 'Explore a growing collection of projects and work.',
         degree: 'Master of Business Administration In MIS',
         degree2: 'Bachelor of Business Administration in Marketing',
 
@@ -114,8 +122,19 @@
         projTableau: 'Tableau 看板',
         projPpt: 'PPT 展示',
         navContact: '联系',
-        welcome: '欢迎来到我的作品集',
-        subtitle: '在下方查看我的课程项目 👇',
+        eyebrow: '数据 · 分析 · 解决方案',
+        greeting: '你好，我是',
+        degreeShort1: '信息系统管理工商管理硕士',
+        degreeShort2: '市场营销工商管理学士',
+        homeIntro: '我将数据转化为洞察，并构建解决方案，让复杂问题更容易理解和付诸行动。',
+        exploreWork: '浏览我的作品',
+        getInTouch: '联系我',
+        entryAbout: '关于我',
+        entryAboutText: '了解我的背景、经历以及前进的动力。',
+        entryExperience: '经历',
+        entryExperienceText: '查看我的学习历程、技能和专业成长。',
+        entryProjects: '项目',
+        entryProjectsText: '浏览不断扩展的项目与作品集合。',
         degree: '工商管理硕士（信息系统管理方向）',
         degree2: '市场营销工商管理学士',
         aboutTitle: '关于我',
@@ -143,7 +162,7 @@
           el.textContent = translations[lang][key];
         }
       });
-      langButton.textContent = lang === 'en' ? '中文' : 'EN';
+      langButton.textContent = lang === 'en' ? '中文 / EN' : '中 / English';
       localStorage.setItem('portfolio-lang', lang);
     }
 
