@@ -3,121 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected web, data visualization, and presentation projects by Le Fan.">
   <title>Projects | Le Fan Portfolio</title>
   <link rel="stylesheet" href="Portfolio.css">
 </head>
-<body class="projects-page">
-  <video class="experience-background-video" autoplay muted loop playsinline aria-hidden="true">
-    <source src="experience-background.mp4" type="video/mp4">
-  </video>
-  <nav class="top-nav">
+<body class="projects-page editorial-page">
+  <nav class="top-nav editorial-nav" aria-label="Primary navigation">
     <div class="brand">
-      <a href="index.html" aria-label="Le Fan Portfolio home">
-        <img src="Mlogo.png" alt="Le Fan Portfolio logo" class="brand-logo">
-      </a>
+      <a href="index.html" aria-label="Le Fan Portfolio home"><img src="Mlogo.png" alt="Le Fan Portfolio logo" class="brand-logo editorial-logo"></a>
     </div>
     <ul class="nav-links">
       <li><a href="about me.html" data-i18n="navAbout">About</a></li>
       <li><a href="Experience.html" data-i18n="navExperience">Experience</a></li>
-      <li><a href="Projects.html" data-i18n="navProjects">Projects</a></li>
+      <li><a href="Projects.html" data-i18n="navProjects" aria-current="page">Projects</a></li>
       <li><a href="https://www.linkedin.com/in/le-fan/" data-i18n="navContact">Contact</a></li>
     </ul>
-    <button id="lang-toggle" class="lang-toggle">中文</button>
+    <button id="lang-toggle" class="lang-toggle editorial-lang-toggle" type="button" aria-label="Switch language">中文 / EN</button>
   </nav>
 
-  <header>
-    <h1>Projects</h1>
-    <p>Hover over each project to preview it, then click to open.</p>
+  <header class="listing-hero">
+    <div>
+      <p class="section-kicker" data-i18n="pageKicker">SELECTED WORK</p>
+      <h1 data-i18n="pageTitle">Projects</h1>
+    </div>
+    <p data-i18n="pageSubtitle">A collection of work across web development, data visualization, and visual communication.</p>
   </header>
 
-  <main>
-    <section class="card-container">
-      <a href="Homework_3.html" class="card project-preview-card project-homework">
-        <h2 data-i18n="card1Title">HTML + CSS + JavaScript Project</h2>
-        <p data-i18n="card1Text">A full website I built in class.</p>
+  <main class="listing-main projects-listing-main">
+    <section class="project-catalog" aria-label="Portfolio projects">
+      <a href="Homework_3.html" class="project-catalog-card">
+        <div class="project-catalog-image"><img src="web-background1.png" alt="Web application project preview"></div>
+        <div class="project-catalog-copy">
+          <span class="project-number">01</span>
+          <p class="section-kicker" data-i18n="card1Type">WEB DEVELOPMENT</p>
+          <h2 data-i18n="card1Title">HTML + CSS + JavaScript Project</h2>
+          <p data-i18n="card1Text">A complete class project combining interface design, application logic, and interaction.</p>
+          <span class="project-catalog-link" data-i18n="openProject">Open project →</span>
+        </div>
       </a>
 
-      <a href="Tableau.html" class="card project-preview-card project-tableau">
-        <h2 data-i18n="card2Title">Tableau Dashboard</h2>
-        <p data-i18n="card2Text">See my data visualization work using Tableau.</p>
+      <a href="Tableau.html" class="project-catalog-card">
+        <div class="project-catalog-image"><img src="Tableau_Dashboard1.png" alt="Tableau dashboard preview"></div>
+        <div class="project-catalog-copy">
+          <span class="project-number">02</span>
+          <p class="section-kicker" data-i18n="card2Type">DATA VISUALIZATION</p>
+          <h2 data-i18n="card2Title">Tableau Dashboard Collection</h2>
+          <p data-i18n="card2Text">Interactive dashboards that turn business data into focused, readable stories.</p>
+          <span class="project-catalog-link" data-i18n="openProject">Open project →</span>
+        </div>
       </a>
 
-      <a href="PPT.html" class="card project-preview-card project-ppt">
-        <h2 data-i18n="card3Title">PowerPoint Presentation</h2>
-        <p data-i18n="card3Text">See my PowerPoint presentation.</p>
+      <a href="PPT.html" class="project-catalog-card">
+        <div class="project-catalog-image"><img src="Presentation_1.gif" alt="Presentation gallery preview"></div>
+        <div class="project-catalog-copy">
+          <span class="project-number">03</span>
+          <p class="section-kicker" data-i18n="card3Type">VISUAL COMMUNICATION</p>
+          <h2 data-i18n="card3Title">Presentation Gallery</h2>
+          <p data-i18n="card3Text">Presentation work designed to make research and complex ideas easier to follow.</p>
+          <span class="project-catalog-link" data-i18n="openProject">Open project →</span>
+        </div>
       </a>
     </section>
   </main>
 
- <footer id="contact">
-    <p data-i18n="footerText">@ Le Fan | Portfolio</p>
-    <a href="https://www.linkedin.com/in/le-fan/" data-i18n="contactLink">Contact Us</a>
+  <footer class="editorial-footer">
+    <a class="editorial-wordmark" href="index.html"><span>LF</span><b>/</b> Le Fan</a>
+    <p data-i18n="footerText">Data, technology, and thoughtful solutions.</p>
+    <a href="https://www.linkedin.com/in/le-fan/" class="text-link" data-i18n="contactLink">Get in touch ↗</a>
   </footer>
+
   <script>
     const translations = {
       en: {
-        navHome: 'Home',
-        navAbout: 'About',
-        navExperience: 'Experience',
-        navProjects: 'Projects',
-        projHomework: 'Application Project',
-        projTableau: 'Tableau Dashboard',
-        projPpt: 'PowerPoint Gallery',
-        navContact: 'Contact',
-        welcome: 'Welcome to My Portfolio',
-        subtitle: 'Explore my projects from school below 👇',
-        card1Title: 'HTML + CSS + JavaScript Project',
-        card1Text: 'A full website I built in class.',
-        card2Title: 'Tableau Dashboard',
-        card2Text: 'See my data visualization work using Tableau.',
-        card3Title: 'PowerPoint Presentation',
-        card3Text: 'See my PowerPoint presentation.',
-        footerText: '@ Le Fan | Portfolio',
-        contactLink: 'Contact Us'
+        navAbout: 'About', navExperience: 'Experience', navProjects: 'Projects', navContact: 'Contact',
+        pageKicker: 'SELECTED WORK', pageTitle: 'Projects', pageSubtitle: 'A collection of work across web development, data visualization, and visual communication.',
+        card1Type: 'WEB DEVELOPMENT', card1Title: 'HTML + CSS + JavaScript Project', card1Text: 'A complete class project combining interface design, application logic, and interaction.',
+        card2Type: 'DATA VISUALIZATION', card2Title: 'Tableau Dashboard Collection', card2Text: 'Interactive dashboards that turn business data into focused, readable stories.',
+        card3Type: 'VISUAL COMMUNICATION', card3Title: 'Presentation Gallery', card3Text: 'Presentation work designed to make research and complex ideas easier to follow.', openProject: 'Open project →',
+        footerText: 'Data, technology, and thoughtful solutions.', contactLink: 'Get in touch ↗'
       },
       zh: {
-        navHome: '首页',
-        navAbout: '关于我',
-        navExperience: '经历',
-        navProjects: '项目',
-        projHomework: 'Application项目',
-        projTableau: 'Tableau 看板',
-        projPpt: 'PPT 展示',
-        navContact: '联系',
-        welcome: '欢迎来到我的作品集',
-        subtitle: '在下方查看我的课程项目 👇',
-        card1Title: 'HTML + CSS + JavaScript 项目',
-        card1Text: '这是我在课程中完成的完整网站。',
-        card2Title: 'Tableau 数据看板',
-        card2Text: '查看我使用 Tableau 完成的数据可视化作品。',
-        card3Title: 'PowerPoint 演示文稿',
-        card3Text: '查看我的 PowerPoint 演示文稿。',
-        footerText: '@ 范乐 | 作品集',
-        contactLink: '联系我'
+        navAbout: '关于我', navExperience: '经历', navProjects: '项目', navContact: '联系',
+        pageKicker: '精选作品', pageTitle: '项目', pageSubtitle: '涵盖网页开发、数据可视化和视觉沟通的作品集合。',
+        card1Type: '网页开发', card1Title: 'HTML + CSS + JavaScript 项目', card1Text: '一个结合界面设计、应用逻辑和交互体验的完整课程项目。',
+        card2Type: '数据可视化', card2Title: 'Tableau 仪表板作品集', card2Text: '通过交互式仪表板，将商业数据转化为聚焦、易读的故事。',
+        card3Type: '视觉沟通', card3Title: '演示文稿作品集', card3Text: '通过视觉表达，让研究和复杂信息变得更容易理解。', openProject: '打开项目 →',
+        footerText: '数据、技术与经过思考的解决方案。', contactLink: '联系我 ↗'
       }
     };
-
     const langButton = document.getElementById('lang-toggle');
     const preferred = localStorage.getItem('portfolio-lang') || 'en';
-
     function setLanguage(lang) {
       document.documentElement.lang = lang;
-      document.querySelectorAll('[data-i18n]').forEach((el) => {
-        const key = el.dataset.i18n;
-        if (translations[lang][key]) {
-          el.textContent = translations[lang][key];
-        }
-      });
+      document.querySelectorAll('[data-i18n]').forEach((el) => { const value = translations[lang][el.dataset.i18n]; if (value) el.textContent = value; });
       langButton.textContent = lang === 'en' ? '中文 / EN' : '中 / English';
       localStorage.setItem('portfolio-lang', lang);
     }
-
     setLanguage(preferred);
-
-    langButton.addEventListener('click', () => {
-      const next = document.documentElement.lang === 'en' ? 'zh' : 'en';
-      setLanguage(next);
-    });
+    langButton.addEventListener('click', () => setLanguage(document.documentElement.lang === 'en' ? 'zh' : 'en'));
   </script>
 </body>
 </html>

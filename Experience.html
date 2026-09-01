@@ -3,18 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Le Fan's professional and academic experience.">
   <title>Experience | Le Fan Portfolio</title>
   <link rel="stylesheet" href="Portfolio.css">
 </head>
-<body class="experience-page">
-  <video class="experience-background-video" autoplay muted loop playsinline aria-hidden="true">
-    <source src="experience-background.mp4" type="video/mp4">
-  </video>
-  <nav class="top-nav">
+<body class="experience-page editorial-page">
+  <nav class="top-nav editorial-nav" aria-label="Primary navigation">
     <div class="brand">
-      <a href="index.html" aria-label="Le Fan Portfolio home">
-        <img src="Mlogo.png" alt="Le Fan Portfolio logo" class="brand-logo">
-      </a>
+      <a href="index.html" aria-label="Le Fan Portfolio home"><img src="Mlogo.png" alt="Le Fan Portfolio logo" class="brand-logo editorial-logo"></a>
     </div>
     <ul class="nav-links">
       <li><a href="about me.html" data-i18n="navAbout">About</a></li>
@@ -22,103 +18,97 @@
       <li><a href="Projects.html" data-i18n="navProjects">Projects</a></li>
       <li><a href="https://www.linkedin.com/in/le-fan/" data-i18n="navContact">Contact</a></li>
     </ul>
-    <button id="lang-toggle" class="lang-toggle">中文</button>
+    <button id="lang-toggle" class="lang-toggle editorial-lang-toggle" type="button" aria-label="Switch language">中文 / EN</button>
   </nav>
 
-  <header>
-    <h1 data-i18n="pageTitle">Experience</h1>
-    <p data-i18n="pageSubtitle">My professional and academic experience.</p>
+  <header class="listing-hero">
+    <div>
+      <p class="section-kicker" data-i18n="pageKicker">PROFESSIONAL JOURNEY</p>
+      <h1 data-i18n="pageTitle">Experience</h1>
+    </div>
+    <p data-i18n="pageSubtitle">A closer look at the roles where I have applied data, technology, communication, and service.</p>
   </header>
 
-  <main>
-    <section class="experience-list" aria-label="Work experience">
+  <main class="listing-main">
+    <section class="experience-list editorial-experience-list" aria-label="Work experience">
       <a class="experience-card" href="Operation-ID.html" aria-label="View details about Operation ID at Main Street Ministries">
-        <div class="experience-heading">
-          <div>
-            <h2 data-i18n="operationOrg">Operation ID, Main Street Ministries</h2>
-            <p class="experience-role" data-i18n="operationRole">Data Entry, Interviewer</p>
+        <span class="experience-index">01</span>
+        <div class="experience-card-body">
+          <div class="experience-heading">
+            <div>
+              <p class="section-kicker" data-i18n="operationType">COMMUNITY SERVICE · DATA OPERATIONS</p>
+              <h2 data-i18n="operationOrg">Operation ID, Main Street Ministries</h2>
+              <p class="experience-role" data-i18n="operationRole">Data Entry, Interviewer</p>
+            </div>
+            <time datetime="2026-06" data-i18n="operationDate">June 2026 – Present</time>
           </div>
-          <time datetime="2026-06" data-i18n="operationDate">June 2026 – Present</time>
+          <ul>
+            <li data-i18n="operationBullet1">Enter information for approximately 30–40 clients each day, maintaining accurate and organized records in the organization’s database.</li>
+            <li data-i18n="operationBullet2">Conduct client interviews to gather required information and identify documentation needs.</li>
+            <li data-i18n="operationBullet3">Research government identification requirements and assist clients with obtaining the appropriate supporting documents.</li>
+          </ul>
+          <span class="experience-link" data-i18n="viewDetails">View details →</span>
         </div>
-        <ul>
-          <li data-i18n="operationBullet1">Enter information for approximately 30–40 clients each day, maintaining accurate and organized records in the organization’s database.</li>
-          <li data-i18n="operationBullet2">Conduct client interviews to gather required information and identify documentation needs.</li>
-          <li data-i18n="operationBullet3">Research government identification requirements and assist clients with obtaining the appropriate supporting documents.</li>
-        </ul>
-        <span class="experience-link" data-i18n="viewDetails">View details →</span>
       </a>
 
       <a class="experience-card" href="Teaching-Assistant.html" aria-label="View details about the Teaching Assistant role at Bauer College">
-        <div class="experience-heading">
-          <div>
-            <h2 data-i18n="bauerOrg">C. T. Bauer College of Business, University of Houston</h2>
-            <p class="experience-role" data-i18n="bauerRole">Teaching Assistant, Graduate &amp; Undergraduate Courses</p>
+        <span class="experience-index">02</span>
+        <div class="experience-card-body">
+          <div class="experience-heading">
+            <div>
+              <p class="section-kicker" data-i18n="bauerType">ACADEMIC · ANALYTICS EDUCATION</p>
+              <h2 data-i18n="bauerOrg">C. T. Bauer College of Business, University of Houston</h2>
+              <p class="experience-role" data-i18n="bauerRole">Teaching Assistant, Graduate &amp; Undergraduate Courses</p>
+            </div>
+            <time datetime="2026-01/2026-05" data-i18n="bauerDate">January 2026 – May 2026</time>
           </div>
-          <time datetime="2026-01/2026-05" data-i18n="bauerDate">January 2026 – May 2026</time>
+          <ul>
+            <li data-i18n="bauerBullet1">Supported approximately 120 students across four graduate and undergraduate courses, including face-to-face, R programming, and Tableau courses.</li>
+            <li data-i18n="bauerBullet2">Assisted with Tableau dashboards, data visualization, R programming, data cleaning, statistical analysis, and analytical problem-solving.</li>
+            <li data-i18n="bauerBullet3">Provided office-hour support for R syntax, Tableau calculations, coding assignments, and data-analysis errors.</li>
+            <li data-i18n="bauerBullet4">Coordinated grading, feedback, student communication, and substitute classroom coverage across in-person and online formats.</li>
+          </ul>
+          <span class="experience-link" data-i18n="viewDetails">View details →</span>
         </div>
-        <ul>
-          <li data-i18n="bauerBullet1">Supported approximately 120 students across four graduate and undergraduate courses, including 40 students in face-to-face courses and 80 students in online R programming and Tableau courses.</li>
-          <li data-i18n="bauerBullet2">Assisted with Tableau dashboards, data visualization, R programming, data cleaning, statistical analysis, and analytical problem-solving.</li>
-          <li data-i18n="bauerBullet3">Provided virtual office-hour support by helping students troubleshoot R syntax, Tableau calculations, coding assignments, and data-analysis errors.</li>
-          <li data-i18n="bauerBullet4">Coordinated grading, feedback, student communication, and substitute classroom coverage to help maintain smooth course operations across in-person and online formats.</li>
-        </ul>
-        <span class="experience-link" data-i18n="viewDetails">View details →</span>
       </a>
     </section>
   </main>
 
-  <footer id="contact">
-    <p data-i18n="footerText">@ Le Fan | Portfolio</p>
-    <a href="https://www.linkedin.com/in/le-fan/" data-i18n="contactLink">Contact Us</a>
+  <footer class="editorial-footer">
+    <a class="editorial-wordmark" href="index.html"><span>LF</span><b>/</b> Le Fan</a>
+    <p data-i18n="footerText">Data, technology, and thoughtful solutions.</p>
+    <a href="https://www.linkedin.com/in/le-fan/" class="text-link" data-i18n="contactLink">Get in touch ↗</a>
   </footer>
 
   <script>
     const translations = {
       en: {
-        navHome: 'Home', navAbout: 'About', navExperience: 'Experience', navProjects: 'Projects',
-        projHomework: 'Application Project', projTableau: 'Tableau Dashboard', projPpt: 'PowerPoint Gallery', navContact: 'Contact',
-        pageTitle: 'Experience', pageSubtitle: 'My professional and academic experience.', viewDetails: 'View details →',
-        operationOrg: 'Operation ID, Main Street Ministries', operationRole: 'Data Entry, Interviewer', operationDate: 'June 2026 – Present',
-        operationBullet1: 'Enter information for approximately 30–40 clients each day, maintaining accurate and organized records in the organization’s database.',
-        operationBullet2: 'Conduct client interviews to gather required information and identify documentation needs.',
-        operationBullet3: 'Research government identification requirements and assist clients with obtaining the appropriate supporting documents.',
-        bauerOrg: 'C. T. Bauer College of Business, University of Houston', bauerRole: 'Teaching Assistant, Graduate & Undergraduate Courses', bauerDate: 'January 2026 – May 2026',
-        bauerBullet1: 'Supported approximately 120 students across four graduate and undergraduate courses, including 40 students in face-to-face courses and 80 students in online R programming and Tableau courses.',
-        bauerBullet2: 'Assisted with Tableau dashboards, data visualization, R programming, data cleaning, statistical analysis, and analytical problem-solving.',
-        bauerBullet3: 'Provided virtual office-hour support by helping students troubleshoot R syntax, Tableau calculations, coding assignments, and data-analysis errors.',
-        bauerBullet4: 'Coordinated grading, feedback, student communication, and substitute classroom coverage to help maintain smooth course operations across in-person and online formats.',
-        footerText: '@ Le Fan | Portfolio', contactLink: 'Contact Us'
+        navAbout: 'About', navExperience: 'Experience', navProjects: 'Projects', navContact: 'Contact',
+        pageKicker: 'PROFESSIONAL JOURNEY', pageTitle: 'Experience', pageSubtitle: 'A closer look at the roles where I have applied data, technology, communication, and service.', viewDetails: 'View details →',
+        operationType: 'COMMUNITY SERVICE · DATA OPERATIONS', operationOrg: 'Operation ID, Main Street Ministries', operationRole: 'Data Entry, Interviewer', operationDate: 'June 2026 – Present',
+        operationBullet1: 'Enter information for approximately 30–40 clients each day, maintaining accurate and organized records in the organization’s database.', operationBullet2: 'Conduct client interviews to gather required information and identify documentation needs.', operationBullet3: 'Research government identification requirements and assist clients with obtaining the appropriate supporting documents.',
+        bauerType: 'ACADEMIC · ANALYTICS EDUCATION', bauerOrg: 'C. T. Bauer College of Business, University of Houston', bauerRole: 'Teaching Assistant, Graduate & Undergraduate Courses', bauerDate: 'January 2026 – May 2026',
+        bauerBullet1: 'Supported approximately 120 students across four graduate and undergraduate courses, including face-to-face, R programming, and Tableau courses.', bauerBullet2: 'Assisted with Tableau dashboards, data visualization, R programming, data cleaning, statistical analysis, and analytical problem-solving.', bauerBullet3: 'Provided office-hour support for R syntax, Tableau calculations, coding assignments, and data-analysis errors.', bauerBullet4: 'Coordinated grading, feedback, student communication, and substitute classroom coverage across in-person and online formats.',
+        footerText: 'Data, technology, and thoughtful solutions.', contactLink: 'Get in touch ↗'
       },
       zh: {
-        navHome: '首页', navAbout: '关于我', navExperience: '经历', navProjects: '项目',
-        projHomework: 'Application 项目', projTableau: 'Tableau 看板', projPpt: 'PPT 展示', navContact: '联系',
-        pageTitle: '经历', pageSubtitle: '我的专业与学术经历。', viewDetails: '查看详情 →',
-        operationOrg: 'Main Street Ministries — Operation ID', operationRole: '数据录入员、访谈员', operationDate: '2026年6月 – 至今',
-        operationBullet1: '每天为约 30–40 名客户录入信息，并在机构数据库中维护准确、有序的记录。',
-        operationBullet2: '访谈客户以收集所需信息并确认文件需求。',
-        operationBullet3: '研究政府身份证明要求，并协助客户取得适当的支持文件。',
-        bauerOrg: '休斯顿大学 C. T. Bauer 商学院', bauerRole: '研究生及本科课程助教', bauerDate: '2026年1月 – 2026年5月',
-        bauerBullet1: '协助四门研究生及本科课程的约 120 名学生，其中包括 40 名面授课程学生，以及 80 名在线 R 编程和 Tableau 课程学生。',
-        bauerBullet2: '协助学生完成 Tableau 仪表板、数据可视化、R 编程、数据清理、统计分析和分析问题求解。',
-        bauerBullet3: '通过线上答疑帮助学生排查 R 语法、Tableau 计算、编程作业和数据分析错误。',
-        bauerBullet4: '协调评分、反馈、学生沟通和代课安排，确保面授和在线课程顺利运行。',
-        footerText: '@ 范乐 | 作品集', contactLink: '联系我'
+        navAbout: '关于我', navExperience: '经历', navProjects: '项目', navContact: '联系',
+        pageKicker: '专业历程', pageTitle: '经历', pageSubtitle: '进一步了解我在数据、技术、沟通和服务领域的实践经历。', viewDetails: '查看详情 →',
+        operationType: '社区服务 · 数据运营', operationOrg: 'Main Street Ministries — Operation ID', operationRole: '数据录入员、访谈员', operationDate: '2026年6月 – 至今',
+        operationBullet1: '每天为约 30–40 名客户录入信息，并在机构数据库中维护准确、有序的记录。', operationBullet2: '访谈客户以收集所需信息并确认文件需求。', operationBullet3: '研究政府身份证明要求，并协助客户取得适当的支持文件。',
+        bauerType: '学术 · 数据分析教育', bauerOrg: '休斯顿大学 C. T. Bauer 商学院', bauerRole: '研究生及本科课程助教', bauerDate: '2026年1月 – 2026年5月',
+        bauerBullet1: '协助四门研究生及本科课程的约 120 名学生，包括面授、R 编程和 Tableau 课程。', bauerBullet2: '协助学生完成 Tableau 仪表板、数据可视化、R 编程、数据清理、统计分析和分析问题求解。', bauerBullet3: '通过答疑时间帮助学生排查 R 语法、Tableau 计算、编程作业和数据分析错误。', bauerBullet4: '协调评分、反馈、学生沟通和代课安排，确保面授和在线课程顺利运行。',
+        footerText: '数据、技术与经过思考的解决方案。', contactLink: '联系我 ↗'
       }
     };
-
     const langButton = document.getElementById('lang-toggle');
     const preferred = localStorage.getItem('portfolio-lang') || 'en';
-
     function setLanguage(lang) {
       document.documentElement.lang = lang;
-      document.querySelectorAll('[data-i18n]').forEach((el) => {
-        const value = translations[lang][el.dataset.i18n];
-        if (value) el.textContent = value;
-      });
+      document.querySelectorAll('[data-i18n]').forEach((el) => { const value = translations[lang][el.dataset.i18n]; if (value) el.textContent = value; });
       langButton.textContent = lang === 'en' ? '中文 / EN' : '中 / English';
       localStorage.setItem('portfolio-lang', lang);
     }
-
     setLanguage(preferred);
     langButton.addEventListener('click', () => setLanguage(document.documentElement.lang === 'en' ? 'zh' : 'en'));
   </script>

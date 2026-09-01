@@ -3,16 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Le Fan's portfolio in data analytics, information systems, and digital solutions.">
   <title>Le Fan | Data &amp; Technology Portfolio</title>
   <link rel="stylesheet" href="Portfolio.css">
 </head>
-<body class="home-page">
-  <video class="home-background-video" autoplay muted loop playsinline aria-hidden="true">
-    <source src="experience-background.mp4" type="video/mp4">
-  </video>
-  <nav class="top-nav">
+<body class="home-page editorial-page">
+  <nav class="top-nav editorial-nav" aria-label="Primary navigation">
     <div class="brand">
-      <a href="#home" aria-label="Le Fan Portfolio home"><img src="Mlogo.png" alt="Le Fan Portfolio logo" class="brand-logo"></a>
+      <a href="#home" aria-label="Le Fan Portfolio home"><img src="Mlogo.png" alt="Le Fan Portfolio logo" class="brand-logo editorial-logo"></a>
     </div>
     <ul class="nav-links">
       <li><a href="about me.html" data-i18n="navAbout">About</a></li>
@@ -20,134 +18,122 @@
       <li><a href="Projects.html" data-i18n="navProjects">Projects</a></li>
       <li><a href="https://www.linkedin.com/in/le-fan/" data-i18n="navContact">Contact</a></li>
     </ul>
-    <button id="lang-toggle" class="lang-toggle home-lang-toggle" aria-label="Switch language">中文 / EN</button>
+    <button id="lang-toggle" class="lang-toggle editorial-lang-toggle" type="button" aria-label="Switch language">中文 / EN</button>
   </nav>
 
-  <main id="home" class="home-hero">
-    <div class="home-shell">
-      <section class="home-showcase" aria-labelledby="home-title">
-        <div class="home-copy">
-          <p class="home-eyebrow" data-i18n="eyebrow">DATA · ANALYTICS · SOLUTIONS</p>
-          <h1 id="home-title"><span data-i18n="greeting">Hi, I’m</span> <strong>Le Fan.</strong></h1>
-          <p class="home-degrees"><span data-i18n="degreeShort1">MS in MIS</span><br><span data-i18n="degreeShort2">BBA in Marketing</span></p>
-          <span class="home-accent-line" aria-hidden="true"></span>
-          <p class="home-intro" data-i18n="homeIntro">I turn data into insights and build solutions that make complex problems simple to understand and act on.</p>
-
-          <div class="home-actions">
-            <a href="Projects.html" class="home-button home-button-primary"><span data-i18n="exploreWork">Explore my work</span><span aria-hidden="true">→</span></a>
-            <a href="https://www.linkedin.com/in/le-fan/" class="home-button home-button-secondary"><span aria-hidden="true">✉</span><span data-i18n="getInTouch">Get in touch</span></a>
-          </div>
+  <main id="home" class="light-home-main">
+    <section class="light-home-hero" aria-labelledby="home-title">
+      <div class="light-home-copy">
+        <p class="section-kicker" data-i18n="eyebrow">DATA · ANALYTICS · SOLUTIONS</p>
+        <h1 id="home-title"><span data-i18n="greeting">Hi, I’m</span><br><strong>Le Fan.</strong></h1>
+        <p class="home-lead" data-i18n="homeLead">I turn complex data and business questions into clear insights, practical tools, and approachable digital experiences.</p>
+        <div class="home-meta" aria-label="Background summary">
+          <span><b>MS</b><span data-i18n="metaMis">Management Information Systems</span></span>
+          <span><b>BBA</b><span data-i18n="metaMarketing">Marketing &amp; MIS</span></span>
         </div>
-
-        <div class="home-portrait-wrap">
-          <img src="ME.jpg" alt="Portrait of Le Fan" class="home-portrait">
+        <div class="home-actions">
+          <a href="#selected-work" class="home-button home-button-primary"><span data-i18n="exploreWork">View selected work</span><span aria-hidden="true">→</span></a>
+          <a href="about me.html" class="home-button home-button-secondary"><span data-i18n="learnMore">Learn more about me</span><span aria-hidden="true">→</span></a>
         </div>
-      </section>
+      </div>
 
-      <section class="home-entry-grid" aria-label="Portfolio sections">
-        <a href="about me.html" class="home-entry-card">
-          <span class="home-entry-icon"><img src="icon-about.png" alt=""></span>
-          <h2 data-i18n="entryAbout">About</h2>
-          <p data-i18n="entryAboutText">Get to know me, my background, and what drives me.</p>
-          <span class="home-entry-arrow" aria-hidden="true">→</span>
+      <div class="light-portrait-wrap">
+        <span class="portrait-backdrop" aria-hidden="true"></span>
+        <img src="ME.jpg" alt="Portrait of Le Fan" class="light-portrait">
+        <span class="portrait-dots" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <section id="selected-work" class="selected-work-section" aria-labelledby="selected-work-title">
+      <div class="section-heading-row">
+        <div>
+          <p class="section-kicker" data-i18n="workKicker">SELECTED WORK</p>
+          <h2 id="selected-work-title" data-i18n="workTitle">Projects built around useful insight.</h2>
+        </div>
+        <a href="Projects.html" class="text-link"><span data-i18n="viewAll">View all projects</span> <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <div class="project-ledger">
+        <a href="Tableau.html" class="project-ledger-row project-featured">
+          <span class="project-number">01</span>
+          <span class="project-thumbnail"><img src="Tableau_Dashboard1.png" alt="Tableau dashboard preview"></span>
+          <span class="project-summary">
+            <small data-i18n="projectType1">DATA VISUALIZATION</small>
+            <strong data-i18n="projectTitle1">Tableau Dashboard Collection</strong>
+            <span data-i18n="projectText1">Interactive dashboards that turn business data into focused, readable stories.</span>
+          </span>
+          <span class="project-arrow" aria-hidden="true">→</span>
         </a>
-        <a href="Experience.html" class="home-entry-card">
-          <span class="home-entry-icon"><img src="icon-experience.png" alt=""></span>
-          <h2 data-i18n="entryExperience">Experience</h2>
-          <p data-i18n="entryExperienceText">See my academic journey, skills, and professional growth.</p>
-          <span class="home-entry-arrow" aria-hidden="true">→</span>
+        <a href="Homework_3.html" class="project-ledger-row">
+          <span class="project-number">02</span>
+          <span class="project-summary">
+            <small data-i18n="projectType2">WEB APPLICATION</small>
+            <strong data-i18n="projectTitle2">JavaScript Application Project</strong>
+            <span data-i18n="projectText2">A complete class project combining interface design, logic, and interaction.</span>
+          </span>
+          <span class="project-arrow" aria-hidden="true">→</span>
         </a>
-        <a href="Projects.html" class="home-entry-card home-entry-projects">
-          <span class="home-entry-icon"><img src="icon-projects.png" alt=""></span>
-          <h2 data-i18n="entryProjects">Projects</h2>
-          <p data-i18n="entryProjectsText">Explore a growing collection of projects and work.</p>
-          <span class="home-entry-arrow" aria-hidden="true">→</span>
+        <a href="PPT.html" class="project-ledger-row">
+          <span class="project-number">03</span>
+          <span class="project-summary">
+            <small data-i18n="projectType3">COMMUNICATION</small>
+            <strong data-i18n="projectTitle3">Presentation Gallery</strong>
+            <span data-i18n="projectText3">Visual communication work that makes complex ideas easier to follow.</span>
+          </span>
+          <span class="project-arrow" aria-hidden="true">→</span>
         </a>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <section class="home-about-band" aria-labelledby="home-about-title">
+      <div>
+        <p class="section-kicker" data-i18n="aboutKicker">ABOUT</p>
+        <h2 id="home-about-title" data-i18n="aboutPreviewTitle">Business perspective. Technical curiosity. Clear communication.</h2>
+      </div>
+      <div class="home-about-copy">
+        <p data-i18n="aboutPreviewText">My background connects MIS, analytics, research, teaching, and leadership. I enjoy finding the structure inside complicated information and turning it into something people can use.</p>
+        <a href="about me.html" class="text-link"><span data-i18n="readStory">Read my full story</span> <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
   </main>
 
-  <a href="Original-Home.html" class="legacy-home-link" title="Open original homepage" aria-label="Open original homepage">＊</a>
+  <a href="Original-Home.html" class="legacy-home-link editorial-legacy-link" title="Open original website" aria-label="Open original website">＊</a>
 
-  <footer id="contact">
-    <p data-i18n="footerText">@ Le Fan | Portfolio</p>
-    <a href="https://www.linkedin.com/in/le-fan/" data-i18n="contactLink">Contact Us</a>
+  <footer class="editorial-footer">
+    <a class="editorial-wordmark" href="#home"><span>LF</span><b>/</b> Le Fan</a>
+    <p data-i18n="footerText">Data, technology, and thoughtful solutions.</p>
+    <a href="https://www.linkedin.com/in/le-fan/" class="text-link" data-i18n="contactLink">Get in touch ↗</a>
   </footer>
 
   <script>
     const translations = {
       en: {
-        navHome: 'Home',
-        navAbout: 'About',
-        navExperience: 'Experience',
-        navProjects: 'Projects',
-        projHomework: 'Homework Project',
-        projTableau: 'Tableau Dashboard',
-        projPpt: 'PowerPoint Gallery',
-        navContact: 'Contact',
-        eyebrow: 'DATA · ANALYTICS · SOLUTIONS',
-        greeting: 'Hi, I’m',
-        degreeShort1: 'MS in MIS',
-        degreeShort2: 'BBA in Marketing',
-        homeIntro: 'I turn data into insights and build solutions that make complex problems simple to understand and act on.',
-        exploreWork: 'Explore my work',
-        getInTouch: 'Get in touch',
-        entryAbout: 'About',
-        entryAboutText: 'Get to know me, my background, and what drives me.',
-        entryExperience: 'Experience',
-        entryExperienceText: 'See my academic journey, skills, and professional growth.',
-        entryProjects: 'Projects',
-        entryProjectsText: 'Explore a growing collection of projects and work.',
-        degree: 'Master of Business Administration In MIS',
-        degree2: 'Bachelor of Business Administration in Marketing',
-
-        aboutTitle: 'About Me',
-        aboutP1: 'Hi, I’m Le Fan — a data-driven problem solver with strong technical skills in Python, Java, JavaScript, Tableau, SAS, Excel, and ArcGIS. I love turning raw data into clear insights, building clean visual dashboards, and creating user-friendly digital solutions.',
-        aboutP2: 'I learn fast, communicate clearly, and enjoy breaking down complex information into something simple and useful. With strengths in analytics, design, and technical tools—not just experience—I bring curiosity, precision, and creativity to every project.',
-        card1Title: 'HTML + CSS + JavaScript Project',
-        card1Text: 'A full website I built in class.',
-        card2Title: 'Tableau Dashboard',
-        card2Text: 'See my data visualization work using Tableau.',
-        card3Title: 'PowerPoint Presentation',
-        card3Text: 'See my PowerPoint presentation.',
-        footerText: '@ Le Fan | Portfolio',
-        contactLink: 'Contact Us'
+        navAbout: 'About', navExperience: 'Experience', navProjects: 'Projects', navContact: 'Contact',
+        eyebrow: 'DATA · ANALYTICS · SOLUTIONS', greeting: 'Hi, I’m',
+        homeLead: 'I turn complex data and business questions into clear insights, practical tools, and approachable digital experiences.',
+        metaMis: 'Management Information Systems', metaMarketing: 'Marketing & MIS',
+        exploreWork: 'View selected work', learnMore: 'Learn more about me',
+        workKicker: 'SELECTED WORK', workTitle: 'Projects built around useful insight.', viewAll: 'View all projects',
+        projectType1: 'DATA VISUALIZATION', projectTitle1: 'Tableau Dashboard Collection', projectText1: 'Interactive dashboards that turn business data into focused, readable stories.',
+        projectType2: 'WEB APPLICATION', projectTitle2: 'JavaScript Application Project', projectText2: 'A complete class project combining interface design, logic, and interaction.',
+        projectType3: 'COMMUNICATION', projectTitle3: 'Presentation Gallery', projectText3: 'Visual communication work that makes complex ideas easier to follow.',
+        aboutKicker: 'ABOUT', aboutPreviewTitle: 'Business perspective. Technical curiosity. Clear communication.',
+        aboutPreviewText: 'My background connects MIS, analytics, research, teaching, and leadership. I enjoy finding the structure inside complicated information and turning it into something people can use.',
+        readStory: 'Read my full story', footerText: 'Data, technology, and thoughtful solutions.', contactLink: 'Get in touch ↗'
       },
       zh: {
-        navHome: '首页',
-        navAbout: '关于我',
-        navExperience: '经历',
-        navProjects: '项目',
-        projHomework: 'Application 项目',
-        projTableau: 'Tableau 看板',
-        projPpt: 'PPT 展示',
-        navContact: '联系',
-        eyebrow: '数据 · 分析 · 解决方案',
-        greeting: '你好，我是',
-        degreeShort1: '信息系统管理工商管理硕士',
-        degreeShort2: '市场营销工商管理学士',
-        homeIntro: '我将数据转化为洞察，并构建解决方案，让复杂问题更容易理解和付诸行动。',
-        exploreWork: '浏览我的作品',
-        getInTouch: '联系我',
-        entryAbout: '关于我',
-        entryAboutText: '了解我的背景、经历以及前进的动力。',
-        entryExperience: '经历',
-        entryExperienceText: '查看我的学习历程、技能和专业成长。',
-        entryProjects: '项目',
-        entryProjectsText: '浏览不断扩展的项目与作品集合。',
-        degree: '工商管理硕士（信息系统管理方向）',
-        degree2: '市场营销工商管理学士',
-        aboutTitle: '关于我',
-        aboutP1: '你好，我是范乐——一名以数据驱动的解决问题者，熟练掌握 Python、Java、JavaScript、Tableau、SAS、Excel 和 ArcGIS。我热衷于将原始数据转化为清晰洞察，构建简洁直观的可视化仪表板，以及打造用户友好的数字化解决方案。',
-        aboutP2: '我学习速度快、沟通清晰，擅长把复杂信息拆解成简单且有价值的内容。凭借在分析、设计和技术工具方面的能力——而不仅仅是经验——我会在每个项目中带来好奇心、严谨性和创造力。',
-        card1Title: 'HTML + CSS + JavaScript 项目',
-        card1Text: '这是我在课程中完成的完整网站。',
-        card2Title: 'Tableau 数据看板',
-        card2Text: '查看我使用 Tableau 完成的数据可视化作品。',
-        card3Title: 'PowerPoint 演示文稿',
-        card3Text: '查看我的 PowerPoint 演示文稿。',
-        footerText: '@ 范乐 | 作品集',
-        contactLink: '联系我'
+        navAbout: '关于我', navExperience: '经历', navProjects: '项目', navContact: '联系',
+        eyebrow: '数据 · 分析 · 解决方案', greeting: '你好，我是',
+        homeLead: '我将复杂的数据与商业问题转化为清晰洞察、实用工具和易于使用的数字体验。',
+        metaMis: '管理信息系统', metaMarketing: '市场营销与 MIS',
+        exploreWork: '查看精选作品', learnMore: '进一步了解我',
+        workKicker: '精选作品', workTitle: '围绕实用洞察构建的项目。', viewAll: '查看全部项目',
+        projectType1: '数据可视化', projectTitle1: 'Tableau 仪表板作品集', projectText1: '通过交互式仪表板，将商业数据转化为聚焦、易读的故事。',
+        projectType2: '网页应用', projectTitle2: 'JavaScript 应用项目', projectText2: '一个结合界面设计、程序逻辑与交互体验的完整课程项目。',
+        projectType3: '视觉沟通', projectTitle3: '演示文稿作品集', projectText3: '通过视觉表达，让复杂信息变得更容易理解。',
+        aboutKicker: '关于我', aboutPreviewTitle: '商业视角。技术好奇心。清晰沟通。',
+        aboutPreviewText: '我的背景连接了 MIS、数据分析、研究、教学与领导力。我喜欢从复杂信息中找到结构，并把它转化为真正有用的内容。',
+        readStory: '阅读完整经历', footerText: '数据、技术与经过思考的解决方案。', contactLink: '联系我 ↗'
       }
     };
 
@@ -157,21 +143,15 @@
     function setLanguage(lang) {
       document.documentElement.lang = lang;
       document.querySelectorAll('[data-i18n]').forEach((el) => {
-        const key = el.dataset.i18n;
-        if (translations[lang][key]) {
-          el.textContent = translations[lang][key];
-        }
+        const value = translations[lang][el.dataset.i18n];
+        if (value) el.textContent = value;
       });
       langButton.textContent = lang === 'en' ? '中文 / EN' : '中 / English';
       localStorage.setItem('portfolio-lang', lang);
     }
 
     setLanguage(preferred);
-
-    langButton.addEventListener('click', () => {
-      const next = document.documentElement.lang === 'en' ? 'zh' : 'en';
-      setLanguage(next);
-    });
+    langButton.addEventListener('click', () => setLanguage(document.documentElement.lang === 'en' ? 'zh' : 'en'));
   </script>
 </body>
 </html>
